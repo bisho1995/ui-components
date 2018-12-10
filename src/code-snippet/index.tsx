@@ -46,7 +46,10 @@ class CodeSnippet extends Component<CodeSnippetProps> {
             className={Styles['copy-button-container']}
             onClick={this.handleCopy}
           >
-            <Icon type="copy" className={Styles['copy-button']} />
+            <Icon
+              type={this.state.hasCopied ? 'check-circle' : 'copy'}
+              className={Styles['copy-button']}
+            />
           </div>
         </Tooltip>
       </div>
