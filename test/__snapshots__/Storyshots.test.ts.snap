@@ -2851,6 +2851,84 @@ exports[`Storyshots Checkbox Standard Checkbox 1`] = `
 </div>
 `;
 
+exports[`Storyshots Code Snippet Code Snippets (Multiline) 1`] = `
+<div
+  className="snippet-container"
+  style={
+    Object {
+      "height": "300px",
+      "width": "500px",
+    }
+  }
+>
+  <div
+    id="sendgrid-snippet"
+    style={
+      Object {
+        "height": "300px",
+        "width": "500px",
+      }
+    }
+  />
+  <span
+    className="copy-button-tooltip"
+    data-tooltip="Click to Copy"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <div
+      className="copy-button-container"
+      onClick={[Function]}
+    >
+      <i
+        className="copy-button sg-icon sg-icon-copy"
+        onClick={undefined}
+        style={null}
+      />
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Code Snippet Code Snippets 1`] = `
+<div
+  className="snippet-container"
+  style={
+    Object {
+      "height": "46px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    id="sendgrid-snippet"
+    style={
+      Object {
+        "height": "46px",
+        "width": "100%",
+      }
+    }
+  />
+  <span
+    className="copy-button-tooltip"
+    data-tooltip="Click to Copy"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <div
+      className="copy-button-container"
+      onClick={[Function]}
+    >
+      <i
+        className="copy-button sg-icon sg-icon-copy"
+        onClick={undefined}
+        style={null}
+      />
+    </div>
+  </span>
+</div>
+`;
+
 exports[`Storyshots Color Palette Bare 1`] = `
 <div
   className="dismissable-background"
