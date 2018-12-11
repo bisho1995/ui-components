@@ -29,7 +29,7 @@ class CodeSnippet extends Component {
             React.createElement(AceEditor, { name: "sendgrid-snippet", mode: "html", theme: "sendgrid-snippet", width: width, height: height, value: text, showGutter: false, highlightActiveLine: false, readOnly: true, ref: this.aceEditorRef }),
             React.createElement(Tooltip, { content: this.state.hasCopied ? 'Copied to Clipboard' : 'Click to Copy', className: Styles['copy-button-tooltip'] },
                 React.createElement("div", { className: Styles['copy-button-container'], onClick: this.handleCopy },
-                    React.createElement(Icon, { type: "copy", className: Styles['copy-button'] })))));
+                    React.createElement(Icon, { type: this.state.hasCopied ? 'check-circle' : 'copy', className: Styles['copy-button'] })))));
     }
 }
 export default CodeSnippet;
