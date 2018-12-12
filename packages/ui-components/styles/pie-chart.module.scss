@@ -1,0 +1,66 @@
+@import '../styles/global/variables.scss';
+
+:global(.pie-chart-card) {
+  max-width: 330px;
+}
+
+.pie-chart {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+
+  .is-size-h2 {
+    margin-bottom: 0;
+  }
+}
+
+.pie-chart-svg {
+  position: relative;
+  max-width: 150px;
+}
+
+.pie-chart-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #294661;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart-legend {
+  li {
+    margin: 9px 0;
+  }
+
+  :global .label {
+    position: relative;
+    display: inline-block;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #7f90a0;
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      background-color: #d4dadf;
+      border-radius: 50%;
+      content: '';
+    }
+    &.label-error::before {
+      background-color: $ron-burgundy;
+    }
+    &.label-delivered::before {
+      background-color: $mantis;
+    }
+  }
+}
