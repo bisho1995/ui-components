@@ -1,11 +1,12 @@
 /* eslint jsx-a11y/label-has-for: 0, jsx-a11y/aria-role: 0 */
 
 import React from 'react';
+import tinycolor from 'tinycolor2';
 import classnames from './utilities/classnames';
 
 import ColorPalette from './color-palette';
 
-import { ColorResult } from 'react-color';
+import { ColorResult, HSLColor, RGBColor } from 'react-color';
 import { Icon } from './icon';
 import Styles from './styles/color-picker.module.scss';
 import { HTMLInputElementProps, TextInput } from './text-input';
@@ -32,19 +33,33 @@ export interface ColorPickerPropsTypes {
   name: string;
   id: string;
   resetValue?: string; // reset color value and show/hide reset anchor
-  value: string; // the actual value selected
+  initialValue: string; // the actual value selected
   textDisabled?: boolean;
   onChange: (event: React.SyntheticEvent<any>, value: string) => void; // callback for what happens on change
 }
+
+export interface ColorPickerState {
+  displayColorPalette: boolean;
+  top: number;
+  left: number;
+  colorValue: ColorResult;
+}
+
+export const defaultColorResult: ColorResult = {
+  hex: '',
+  hsl: { h: 0, s: 0, l: 0 },
+  rgb: { r: 0, g: 0, b: 0 },
+};
+
 export class ColorPicker extends React.Component<
   ColorPickerPropsTypes & HTMLInputElementProps,
-  {
-    displayColorPalette: boolean;
-    top: number;
-    left: number;
-  }
+  ColorPickerState
 > {
   public readonly state = {
+    colorValue: {
+      ...defaultColorResult,
+      ...this.colorResultFrom(this.props.initialValue),
+    },
     displayColorPalette: false,
     left: 0,
     top: 0,
@@ -56,7 +71,7 @@ export class ColorPicker extends React.Component<
     const {
       labelText,
       resetValue,
-      value,
+      initialValue,
       onChange,
       ...attributes
     } = this.props;
@@ -85,13 +100,13 @@ export class ColorPicker extends React.Component<
             placeholder="auto"
             step={this.props.step as number} // weird typing issues with Input types
             type={'text'}
-            value={value}
+            value={initialValue}
             isDisabled={!!this.props.textDisabled}
           />
           <button
             className={Styles.bubble}
             data-role="color-picker-trigger"
-            style={{ backgroundColor: value }}
+            style={{ backgroundColor: initialValue }}
             onClick={this.toggleColorPalette}
             ref={element => {
               this.colorPaletteButton = element;
@@ -100,7 +115,8 @@ export class ColorPicker extends React.Component<
           {displayColorPalette && (
             <ColorPalette
               toggleColorPalette={this.toggleColorPalette}
-              color={value}
+              color={this.state.colorValue.hsl}
+              colorValue={this.state.colorValue}
               onChange={this.handleChangeFromColorPalette}
               onMount={this.handleColorPaletteMount}
               textDisabled={this.props.textDisabled}
@@ -125,13 +141,17 @@ export class ColorPicker extends React.Component<
     color: string
   ) => {
     if (!color && !e) {
+      this.setState({ colorValue: defaultColorResult });
       this.props.onChange(e, '');
     } else {
-      this.props.onChange(e, e.currentTarget.value);
+      const newColorResult = this.colorResultFrom(color);
+      this.props.onChange(e, color);
+      this.setState({ colorValue: newColorResult });
     }
   };
 
   private handleChangeFromColorPalette = (color: ColorResult) => {
+    this.setState({ colorValue: color });
     this.props.onChange(null, color.hex);
   };
 
@@ -161,6 +181,15 @@ export class ColorPicker extends React.Component<
       )
     );
   };
+
+  private colorResultFrom(colorStr: string): ColorResult {
+    const color = tinycolor(colorStr);
+    return {
+      hex: color.toHex(),
+      hsl: color.toHsl(),
+      rgb: color.toRgb(),
+    };
+  }
 }
 
 export default ColorPicker;

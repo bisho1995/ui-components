@@ -2955,7 +2955,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
             "MozBorderRadius": undefined,
             "OBorderRadius": undefined,
             "WebkitBorderRadius": undefined,
-            "background": "hsl(249.99999999999994,100%, 50%)",
+            "background": "hsl(0,100%, 50%)",
             "borderRadius": undefined,
             "bottom": "0px",
             "left": "0px",
@@ -3021,9 +3021,9 @@ exports[`Storyshots Color Palette Bare 1`] = `
             style={
               Object {
                 "cursor": "default",
-                "left": "66.66666666666667%",
+                "left": "0%",
                 "position": "absolute",
-                "top": "70%",
+                "top": "100%",
               }
             }
           >
@@ -3122,7 +3122,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
           <div
             style={
               Object {
-                "left": "69.44444444444443%",
+                "left": "0%",
                 "position": "absolute",
               }
             }
@@ -3164,7 +3164,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
         onClick={[Function]}
         style={
           Object {
-            "background": "#22194d",
+            "background": "",
           }
         }
       />
@@ -3185,7 +3185,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
             placeholder={undefined}
             spellCheck="false"
             style={Object {}}
-            value="#22194D"
+            value=""
           />
           <span
             onMouseDown={[Function]}
@@ -3215,7 +3215,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
               placeholder={undefined}
               spellCheck="false"
               style={Object {}}
-              value="34"
+              value="0"
             />
             <span
               onMouseDown={[Function]}
@@ -3242,7 +3242,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
               placeholder={undefined}
               spellCheck="false"
               style={Object {}}
-              value="25"
+              value="0"
             />
             <span
               onMouseDown={[Function]}
@@ -3269,7 +3269,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
               placeholder={undefined}
               spellCheck="false"
               style={Object {}}
-              value="77"
+              value="0"
             />
             <span
               onMouseDown={[Function]}
@@ -3347,6 +3347,65 @@ exports[`Storyshots Color Palette Color Picker 1`] = `
       style={
         Object {
           "backgroundColor": "",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cp-default"
+    role="color-picker-container"
+  />
+</div>
+`;
+
+exports[`Storyshots Color Palette Initial Value 1`] = `
+<div
+  className="picker-wrapper"
+>
+  <label />
+  <div
+    className="inputs-wrapper"
+  >
+    <i
+      className="reset-button sg-icon sg-icon-reload"
+      data-role="reset-button"
+      onClick={[Function]}
+      style={null}
+      title="Reset to Default Color"
+    />
+    <div
+      className="input-text-wrap has-value"
+      style={Object {}}
+    >
+      <label
+        className="input-text-label"
+        htmlFor="test-color"
+      >
+        
+      </label>
+      <input
+        aria-describedby=""
+        data-role="color-value"
+        id="test-color"
+        name="color-story"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="auto"
+        step={undefined}
+        type="text"
+        value="#1E82A2"
+      />
+      
+      
+    </div>
+    <button
+      className="bubble"
+      data-role="color-picker-trigger"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#1E82A2",
         }
       }
     />
