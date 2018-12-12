@@ -19306,6 +19306,40 @@ exports[`Storyshots Text Input Text Input Simple with a value 1`] = `
 </div>
 `;
 
+exports[`Storyshots Text Input Text Input Simple with a value and reset value 1`] = `
+<div
+  className="input-text-wrap has-reset has-value is-required"
+  style={Object {}}
+>
+  <i
+    className="reset-button sg-icon sg-icon-reload"
+    data-role="reset-button"
+    onClick={[Function]}
+    style={null}
+    title="Reset to Default Value"
+  />
+  <label
+    className="input-text-label"
+    htmlFor="test-input-simple"
+  >
+    Test Input
+  </label>
+  <input
+    aria-describedby=""
+    id="test-input-simple"
+    name={undefined}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={null}
+    type="text"
+    value="Reset me"
+  />
+  
+  
+</div>
+`;
+
 exports[`Storyshots Text Input Text Input With Error 1`] = `
 <div
   className="input-text-wrap is-error"
