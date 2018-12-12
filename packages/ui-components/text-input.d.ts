@@ -21,6 +21,7 @@ export interface TextInputProps {
     label?: string;
     info?: React.ReactNode;
     onBlur?: (event: FocusEvent, value: string | number) => void;
+    resetValue?: string;
     style?: CSSProperties;
     step?: number;
     units?: Units;
@@ -56,6 +57,7 @@ export declare class TextInput extends React.Component<TextInputProps & HTMLInpu
     readonly inputStyle: React.CSSProperties;
     onValueChange(event: any): void;
     onInputBlur(event: any): void;
+    onReset(event: React.MouseEvent<HTMLButtonElement>): void;
     render(): JSX.Element;
 }
 export declare type BaseProps = TextInputProps & HTMLInputElementProps;
@@ -64,6 +66,6 @@ export declare class StatefulTextInput<ExcludedProps extends keyof BaseProps = n
     readonly state: {
         value: string | number;
     };
-    onValueChange: (event: React.KeyboardEvent<HTMLInputElement>) => void;
+    onValueChange: (event: React.KeyboardEvent<HTMLInputElement> | React.MouseEvent<HTMLElement>) => void;
     render(): JSX.Element;
 }

@@ -223,6 +223,13 @@ input {
     }
   }
 
+  &.has-reset {
+    display: flex;
+    .input-text-label {
+      left: 30px;
+    }
+  }
+
   [type='text'],
   [type='password'],
   [type='number'],
@@ -327,4 +334,11 @@ input {
     cursor: pointer;
     background-color: $slate-05;
   }
+}
+
+.reset-button {
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
 }

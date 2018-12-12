@@ -8,6 +8,7 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import React from 'react';
+import { Icon } from './icon';
 import Styles from './styles/text-input.module.scss';
 import cn from './utilities/classnames';
 const convertInputValue = (value, inputType) => {
@@ -36,6 +37,7 @@ export class TextInput extends React.Component {
         this.onInputFocus = onInputFocus.bind(this);
         this.onInputBlur = this.onInputBlur.bind(this);
         this.onValueChange = this.onValueChange.bind(this);
+        this.onReset = this.onReset.bind(this);
     }
     get inputStyle() {
         const { fullWidth, style } = this.props;
@@ -55,9 +57,17 @@ export class TextInput extends React.Component {
             this.props.onBlur(event, value);
         }
     }
+    onReset(event) {
+        const { onChange, resetValue } = this.props;
+        event.preventDefault();
+        onChange(event, resetValue);
+    }
     render() {
-        const _a = this.props, { children, type, id, onChange, value, name, fullWidth, icon, isValid, isRequired, isDisabled, isLarge, isSearch, label, info, onBlur, style, units } = _a, attributes = __rest(_a, ["children", "type", "id", "onChange", "value", "name", "fullWidth", "icon", "isValid", "isRequired", "isDisabled", "isLarge", "isSearch", "label", "info", "onBlur", "style", "units"]);
+        const _a = this.props, { children, type, id, onChange, value, name, fullWidth, icon, isValid, isRequired, isDisabled, isLarge, isSearch, label, info, onBlur, resetValue, style, units } = _a, attributes = __rest(_a, ["children", "type", "id", "onChange", "value", "name", "fullWidth", "icon", "isValid", "isRequired", "isDisabled", "isLarge", "isSearch", "label", "info", "onBlur", "resetValue", "style", "units"]);
+        const hasValidResetValue = resetValue && typeof resetValue === 'string';
         const classes = cn('input-text-wrap', Styles['input-text-wrap'], {
+            [Styles['has-reset']]: hasValidResetValue,
+            'has-reset': hasValidResetValue,
             [Styles[`has-space-${icon}`]]: this.props.icon,
             [`has-space-${icon}`]: this.props.icon,
             [Styles['has-units']]: this.props.units,
@@ -81,6 +91,7 @@ export class TextInput extends React.Component {
         const dataUnits = units && { 'data-units': units };
         const step = type === 'number' ? this.props.step || getStepSize(value) : null;
         return (React.createElement("div", Object.assign({ className: classes, style: this.inputStyle }, dataUnits),
+            (resetValue || typeof resetValue === 'string') && (React.createElement(Icon, { className: Styles['reset-button'], type: "reload", "data-role": "reset-button", title: "Reset to Default Value", onClick: this.onReset })),
             React.createElement("label", { className: cn('input-text-label', Styles['input-text-label']), htmlFor: this.props.id }, label),
             React.createElement("input", Object.assign({ id: id, value: value, name: name, type: type, step: step, onChange: this.onValueChange, onFocus: this.onInputFocus, onBlur: this.onInputBlur, "aria-describedby": infoId }, attributes)),
             info && (React.createElement("span", { className: cn('input-info', Styles['input-info'], {
@@ -110,7 +121,9 @@ export class StatefulTextInput extends React.Component {
         super(...arguments);
         this.state = { value: initState(this.props) };
         this.onValueChange = (event) => {
-            const value = convertInputValue(event.currentTarget.value, this.props.type);
+            const value = 'value' in event.currentTarget
+                ? convertInputValue(event.currentTarget.value, this.props.type)
+                : this.props.resetValue;
             this.setState({ value });
             this.props.onChange(event, value);
         };
