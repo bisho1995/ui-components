@@ -9,6 +9,7 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import React from 'react';
+import tinycolor from 'tinycolor2';
 import ColorPalette from './color-palette';
 import { Icon } from './icon';
 import Styles from './styles/color-picker.module.scss';
@@ -22,10 +23,16 @@ export function getPalettePosition(clientHeight, paletteTriggerRect, initialPale
     const newLeft = initialPaletteRect.left - initialPaletteRect.width / 2;
     return { top: newTop, left: newLeft };
 }
+export const defaultColorResult = {
+    hex: '',
+    hsl: { h: 0, s: 0, l: 0 },
+    rgb: { r: 0, g: 0, b: 0 },
+};
 export class ColorPicker extends React.Component {
     constructor() {
         super(...arguments);
         this.state = {
+            colorValue: Object.assign({}, defaultColorResult, this.colorResultFrom(this.props.initialValue)),
             displayColorPalette: false,
             left: 0,
             top: 0,
@@ -38,13 +45,17 @@ export class ColorPicker extends React.Component {
         };
         this.handleChangeFromTextInput = (e, color) => {
             if (!color && !e) {
+                this.setState({ colorValue: defaultColorResult });
                 this.props.onChange(e, '');
             }
             else {
-                this.props.onChange(e, e.currentTarget.value);
+                const newColorResult = this.colorResultFrom(color);
+                this.props.onChange(e, color);
+                this.setState({ colorValue: newColorResult });
             }
         };
         this.handleChangeFromColorPalette = (color) => {
+            this.setState({ colorValue: color });
             this.props.onChange(null, color.hex);
         };
         this.toggleColorPalette = () => {
@@ -65,7 +76,7 @@ export class ColorPicker extends React.Component {
         };
     }
     render() {
-        const _a = this.props, { labelText, resetValue, value, onChange } = _a, attributes = __rest(_a, ["labelText", "resetValue", "value", "onChange"]);
+        const _a = this.props, { labelText, resetValue, initialValue, onChange } = _a, attributes = __rest(_a, ["labelText", "resetValue", "initialValue", "onChange"]);
         const { displayColorPalette, top, left } = this.state;
         return (React.createElement("div", { className: cn(Styles['picker-wrapper'], {
                 [Styles['text-disabled']]: this.props.textDisabled,
@@ -73,12 +84,20 @@ export class ColorPicker extends React.Component {
             React.createElement("label", null, labelText),
             React.createElement("div", { className: Styles['inputs-wrapper'] },
                 (resetValue || typeof resetValue === 'string') && (React.createElement(Icon, { className: Styles['reset-button'], type: "reload", "data-role": "reset-button", title: "Reset to Default Color", onClick: this.onReset })),
-                React.createElement(TextInput, Object.assign({}, attributes, { id: this.props.id, onChange: this.handleChangeFromTextInput, placeholder: "auto", step: this.props.step, type: 'text', value: value, isDisabled: !!this.props.textDisabled })),
-                React.createElement("button", { className: Styles.bubble, "data-role": "color-picker-trigger", style: { backgroundColor: value }, onClick: this.toggleColorPalette, ref: element => {
+                React.createElement(TextInput, Object.assign({}, attributes, { id: this.props.id, onChange: this.handleChangeFromTextInput, placeholder: "auto", step: this.props.step, type: 'text', value: initialValue, isDisabled: !!this.props.textDisabled })),
+                React.createElement("button", { className: Styles.bubble, "data-role": "color-picker-trigger", style: { backgroundColor: initialValue }, onClick: this.toggleColorPalette, ref: element => {
                         this.colorPaletteButton = element;
                     } }),
-                displayColorPalette && (React.createElement(ColorPalette, { toggleColorPalette: this.toggleColorPalette, color: value, onChange: this.handleChangeFromColorPalette, onMount: this.handleColorPaletteMount, textDisabled: this.props.textDisabled, top: top, left: left }))),
+                displayColorPalette && (React.createElement(ColorPalette, { toggleColorPalette: this.toggleColorPalette, color: this.state.colorValue.hsl, colorValue: this.state.colorValue, onChange: this.handleChangeFromColorPalette, onMount: this.handleColorPaletteMount, textDisabled: this.props.textDisabled, top: top, left: left }))),
             React.createElement("div", { className: "cp-default", role: "color-picker-container" })));
+    }
+    colorResultFrom(colorStr) {
+        const color = tinycolor(colorStr);
+        return {
+            hex: color.toHex(),
+            hsl: color.toHsl(),
+            rgb: color.toRgb(),
+        };
     }
 }
 export default ColorPicker;

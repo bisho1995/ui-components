@@ -26,10 +26,10 @@ class ColorPalette extends React.Component {
     render() {
         const { toggleColorPalette, top = 0, left = 0 } = this.props;
         const injectedProps = {
-            hex: this.props.hex,
-            hsl: this.props.hsl,
+            hex: this.props.colorValue.hex,
+            hsl: this.props.colorValue.hsl,
             onChange: this.onChange,
-            rgb: this.props.rgb,
+            rgb: this.props.colorValue.rgb,
         };
         return createPortal(React.createElement(DismissableBackground, { onClick: toggleColorPalette },
             React.createElement("div", { className: cn(Styles['color-palette'], {
@@ -38,7 +38,7 @@ class ColorPalette extends React.Component {
                     this.palette = p;
                 } },
                 React.createElement("div", { className: Styles.saturation },
-                    React.createElement(Saturation, Object.assign({}, this.props, { onChange: this.onChange }))),
+                    React.createElement(Saturation, Object.assign({}, this.props, injectedProps))),
                 React.createElement(HueSlider, Object.assign({}, injectedProps)),
                 React.createElement(ColorControls, { colorProps: injectedProps }),
                 React.createElement(ColorStorage, { color: injectedProps.hex, onChange: this.onChange }))), document.body);

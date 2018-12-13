@@ -15,6 +15,7 @@ export { ButtonList } from './button-list';
 export { Card } from './card';
 export { Counter } from './counter';
 export { CenterModal } from './center-modal';
+export { CodeSnippet } from './code-snippet';
 export { Column } from './grid/column';
 export { Checkbox } from './checkbox';
 export { ConfirmationModal } from './confirmation-modal';

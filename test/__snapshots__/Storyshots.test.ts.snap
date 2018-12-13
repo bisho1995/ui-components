@@ -2851,6 +2851,84 @@ exports[`Storyshots Checkbox Standard Checkbox 1`] = `
 </div>
 `;
 
+exports[`Storyshots Code Snippet Code Snippets (Multiline) 1`] = `
+<div
+  className="snippet-container"
+  style={
+    Object {
+      "height": "300px",
+      "width": "500px",
+    }
+  }
+>
+  <div
+    id="sendgrid-snippet"
+    style={
+      Object {
+        "height": "300px",
+        "width": "500px",
+      }
+    }
+  />
+  <span
+    className="copy-button-tooltip"
+    data-tooltip="Click to Copy"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <div
+      className="copy-button-container"
+      onClick={[Function]}
+    >
+      <i
+        className="copy-button sg-icon sg-icon-copy"
+        onClick={undefined}
+        style={null}
+      />
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Code Snippet Code Snippets 1`] = `
+<div
+  className="snippet-container"
+  style={
+    Object {
+      "height": "46px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    id="sendgrid-snippet"
+    style={
+      Object {
+        "height": "46px",
+        "width": "100%",
+      }
+    }
+  />
+  <span
+    className="copy-button-tooltip"
+    data-tooltip="Click to Copy"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <div
+      className="copy-button-container"
+      onClick={[Function]}
+    >
+      <i
+        className="copy-button sg-icon sg-icon-copy"
+        onClick={undefined}
+        style={null}
+      />
+    </div>
+  </span>
+</div>
+`;
+
 exports[`Storyshots Color Palette Bare 1`] = `
 <div
   className="dismissable-background"
@@ -2877,7 +2955,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
             "MozBorderRadius": undefined,
             "OBorderRadius": undefined,
             "WebkitBorderRadius": undefined,
-            "background": "hsl(249.99999999999994,100%, 50%)",
+            "background": "hsl(0,100%, 50%)",
             "borderRadius": undefined,
             "bottom": "0px",
             "left": "0px",
@@ -2943,9 +3021,9 @@ exports[`Storyshots Color Palette Bare 1`] = `
             style={
               Object {
                 "cursor": "default",
-                "left": "66.66666666666667%",
+                "left": "0%",
                 "position": "absolute",
-                "top": "70%",
+                "top": "100%",
               }
             }
           >
@@ -3044,7 +3122,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
           <div
             style={
               Object {
-                "left": "69.44444444444443%",
+                "left": "0%",
                 "position": "absolute",
               }
             }
@@ -3086,7 +3164,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
         onClick={[Function]}
         style={
           Object {
-            "background": "#22194d",
+            "background": "",
           }
         }
       />
@@ -3107,7 +3185,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
             placeholder={undefined}
             spellCheck="false"
             style={Object {}}
-            value="#22194D"
+            value=""
           />
           <span
             onMouseDown={[Function]}
@@ -3137,7 +3215,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
               placeholder={undefined}
               spellCheck="false"
               style={Object {}}
-              value="34"
+              value="0"
             />
             <span
               onMouseDown={[Function]}
@@ -3164,7 +3242,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
               placeholder={undefined}
               spellCheck="false"
               style={Object {}}
-              value="25"
+              value="0"
             />
             <span
               onMouseDown={[Function]}
@@ -3191,7 +3269,7 @@ exports[`Storyshots Color Palette Bare 1`] = `
               placeholder={undefined}
               spellCheck="false"
               style={Object {}}
-              value="77"
+              value="0"
             />
             <span
               onMouseDown={[Function]}
@@ -3269,6 +3347,65 @@ exports[`Storyshots Color Palette Color Picker 1`] = `
       style={
         Object {
           "backgroundColor": "",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cp-default"
+    role="color-picker-container"
+  />
+</div>
+`;
+
+exports[`Storyshots Color Palette Initial Value 1`] = `
+<div
+  className="picker-wrapper"
+>
+  <label />
+  <div
+    className="inputs-wrapper"
+  >
+    <i
+      className="reset-button sg-icon sg-icon-reload"
+      data-role="reset-button"
+      onClick={[Function]}
+      style={null}
+      title="Reset to Default Color"
+    />
+    <div
+      className="input-text-wrap has-value"
+      style={Object {}}
+    >
+      <label
+        className="input-text-label"
+        htmlFor="test-color"
+      >
+        
+      </label>
+      <input
+        aria-describedby=""
+        data-role="color-value"
+        id="test-color"
+        name="color-story"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="auto"
+        step={undefined}
+        type="text"
+        value="#1E82A2"
+      />
+      
+      
+    </div>
+    <button
+      className="bubble"
+      data-role="color-picker-trigger"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#1E82A2",
         }
       }
     />
@@ -10586,6 +10723,455 @@ exports[`Storyshots Percent Input Basic 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots Pie Chart Basic 1`] = `
+Array [
+  <div
+    className="card pie-chart-card is-centered"
+  >
+    <span
+      className="badge carrot"
+    >
+      Average
+    </span>
+    <div
+      className="pie-chart"
+    >
+      <div
+        className="pie-chart-svg"
+      >
+        <svg
+          className="donut"
+          height="100%"
+          viewBox="0 0 42 42"
+          width="100%"
+        >
+          <circle
+            className="donut-hole"
+            cx="21"
+            cy="21"
+            fill="#fff"
+            r="15.91549430918954"
+          />
+          <circle
+            className="donut-ring"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-dasharray="18 82"
+            stroke-dashoffset="43"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#b71c1c"
+            stroke-dasharray="23 77"
+            stroke-dashoffset="66"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#18c96e"
+            stroke-dasharray="59 41"
+            stroke-dashoffset="25"
+            stroke-width="2"
+          />
+        </svg>
+        <span
+          className="pie-chart-number is-size-h2"
+        >
+          59
+          %
+        </span>
+      </div>
+      <ul
+        className="pie-chart-legend"
+      >
+        <li>
+          <span
+            className="label label-delivered"
+          >
+            59% passed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-error"
+          >
+            23% failed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-draft"
+          >
+            18% not received
+          </span>
+        </li>
+      </ul>
+    </div>
+    <span
+      className="has-underline is-size-h2"
+      data-tooltip="Including everything"
+      data-tooltip-pos="down"
+    >
+      Overall Deliverability
+    </span>
+  </div>,
+  <div
+    className="card pie-chart-card is-centered"
+  >
+    <span
+      className="badge mantis"
+    >
+      Good
+    </span>
+    <div
+      className="pie-chart"
+    >
+      <div
+        className="pie-chart-svg"
+      >
+        <svg
+          className="donut"
+          height="100%"
+          viewBox="0 0 42 42"
+          width="100%"
+        >
+          <circle
+            className="donut-hole"
+            cx="21"
+            cy="21"
+            fill="#fff"
+            r="15.91549430918954"
+          />
+          <circle
+            className="donut-ring"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-dasharray="0 100"
+            stroke-dashoffset="25"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#b71c1c"
+            stroke-dasharray="12 88"
+            stroke-dashoffset="37"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#18c96e"
+            stroke-dasharray="88 12"
+            stroke-dashoffset="25"
+            stroke-width="2"
+          />
+        </svg>
+        <span
+          className="pie-chart-number is-size-h2"
+        >
+          88
+          %
+        </span>
+      </div>
+      <ul
+        className="pie-chart-legend"
+      >
+        <li>
+          <span
+            className="label label-delivered"
+          >
+            88% passed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-error"
+          >
+            12% failed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-draft"
+          >
+            0% not received
+          </span>
+        </li>
+      </ul>
+    </div>
+    <span
+      className="has-underline is-size-h2"
+      data-tooltip="Including everything"
+      data-tooltip-pos="down"
+    >
+      B2B Deliverability
+    </span>
+  </div>,
+  <div
+    className="card pie-chart-card is-centered"
+  >
+    <span
+      className="badge ron-burgundy"
+    >
+      Poor
+    </span>
+    <div
+      className="pie-chart"
+    >
+      <div
+        className="pie-chart-svg"
+      >
+        <svg
+          className="donut"
+          height="100%"
+          viewBox="0 0 42 42"
+          width="100%"
+        >
+          <circle
+            className="donut-hole"
+            cx="21"
+            cy="21"
+            fill="#fff"
+            r="15.91549430918954"
+          />
+          <circle
+            className="donut-ring"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-dasharray="7 93"
+            stroke-dashoffset="32"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#b71c1c"
+            stroke-dasharray="93 7"
+            stroke-dashoffset="125"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#18c96e"
+            stroke-dasharray="0 100"
+            stroke-dashoffset="25"
+            stroke-width="2"
+          />
+        </svg>
+        <span
+          className="pie-chart-number is-size-h2"
+        >
+          0
+          %
+        </span>
+      </div>
+      <ul
+        className="pie-chart-legend"
+      >
+        <li>
+          <span
+            className="label label-delivered"
+          >
+            0% passed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-error"
+          >
+            93% failed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-draft"
+          >
+            7% not received
+          </span>
+        </li>
+      </ul>
+    </div>
+    <span
+      className="has-underline is-size-h2"
+      data-tooltip="Including everything"
+      data-tooltip-pos="down"
+    >
+      B2C Deliverability
+    </span>
+  </div>,
+  <div
+    className="card pie-chart-card is-centered"
+  >
+    <span
+      className="badge carrot"
+    >
+      Average
+    </span>
+    <div
+      className="pie-chart"
+    >
+      <div
+        className="pie-chart-svg"
+      >
+        <svg
+          className="donut"
+          height="100%"
+          viewBox="0 0 42 42"
+          width="100%"
+        >
+          <circle
+            className="donut-hole"
+            cx="21"
+            cy="21"
+            fill="#fff"
+            r="15.91549430918954"
+          />
+          <circle
+            className="donut-ring"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#9e9e9e"
+            stroke-dasharray="4 96"
+            stroke-dashoffset="28"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#b71c1c"
+            stroke-dasharray="46 54"
+            stroke-dashoffset="74"
+            stroke-width="2"
+          />
+          <circle
+            className="donut-segment"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="15.91549430918954"
+            stroke="#18c96e"
+            stroke-dasharray="51 49"
+            stroke-dashoffset="25"
+            stroke-width="2"
+          />
+        </svg>
+        <span
+          className="pie-chart-number is-size-h2"
+        >
+          51
+          %
+        </span>
+      </div>
+      <ul
+        className="pie-chart-legend"
+      >
+        <li>
+          <span
+            className="label label-delivered"
+          >
+            51% passed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-error"
+          >
+            46% failed
+          </span>
+        </li>
+        <li>
+          <span
+            className="label label-draft"
+          >
+            4% not received
+          </span>
+        </li>
+      </ul>
+    </div>
+    <span
+      className="has-underline is-size-h2"
+      data-tooltip="Including everything"
+      data-tooltip-pos="down"
+    >
+      Overall Deliverability
+    </span>
+  </div>,
+]
 `;
 
 exports[`Storyshots Progress Horizontal Progress 1`] = `
@@ -18714,6 +19300,40 @@ exports[`Storyshots Text Input Text Input Simple with a value 1`] = `
     step={null}
     type="text"
     value="omg wuuuut"
+  />
+  
+  
+</div>
+`;
+
+exports[`Storyshots Text Input Text Input Simple with a value and reset value 1`] = `
+<div
+  className="input-text-wrap has-reset has-value is-required"
+  style={Object {}}
+>
+  <i
+    className="reset-button sg-icon sg-icon-reload"
+    data-role="reset-button"
+    onClick={[Function]}
+    style={null}
+    title="Reset to Default Value"
+  />
+  <label
+    className="input-text-label"
+    htmlFor="test-input-simple"
+  >
+    Test Input
+  </label>
+  <input
+    aria-describedby=""
+    id="test-input-simple"
+    name={undefined}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    step={null}
+    type="text"
+    value="Reset me"
   />
   
   

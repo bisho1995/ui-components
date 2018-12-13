@@ -1,4 +1,5 @@
 import React, { CSSProperties } from 'react';
+import { Icon } from './icon';
 import Styles from './styles/text-input.module.scss';
 import { InputIcons } from './types/input-icons';
 import { InputType } from './types/inputs';
@@ -44,6 +45,7 @@ export interface TextInputProps {
   label?: string;
   info?: React.ReactNode;
   onBlur?: (event: FocusEvent, value: string | number) => void;
+  resetValue?: string;
   style?: CSSProperties;
   step?: number;
   units?: Units;
@@ -86,6 +88,7 @@ export class TextInput extends React.Component<
     this.onInputFocus = onInputFocus.bind(this);
     this.onInputBlur = this.onInputBlur.bind(this);
     this.onValueChange = this.onValueChange.bind(this);
+    this.onReset = this.onReset.bind(this);
   }
 
   get inputStyle() {
@@ -110,6 +113,12 @@ export class TextInput extends React.Component<
     }
   }
 
+  public onReset(event: React.MouseEvent<HTMLButtonElement>) {
+    const { onChange, resetValue } = this.props;
+    event.preventDefault();
+    onChange(event, resetValue);
+  }
+
   public render() {
     const {
       children,
@@ -128,12 +137,17 @@ export class TextInput extends React.Component<
       label,
       info,
       onBlur,
+      resetValue,
       style,
       units,
       ...attributes
     } = this.props;
 
+    const hasValidResetValue = resetValue && typeof resetValue === 'string';
+
     const classes = cn('input-text-wrap', Styles['input-text-wrap'], {
+      [Styles['has-reset']]: hasValidResetValue,
+      'has-reset': hasValidResetValue,
       [Styles[`has-space-${icon}`]]: this.props.icon,
       [`has-space-${icon}`]: this.props.icon,
       [Styles['has-units']]: this.props.units,
@@ -160,6 +174,15 @@ export class TextInput extends React.Component<
       type === 'number' ? this.props.step || getStepSize(value) : null;
     return (
       <div className={classes} style={this.inputStyle} {...dataUnits}>
+        {(resetValue || typeof resetValue === 'string') && (
+          <Icon
+            className={Styles['reset-button']}
+            type="reload"
+            data-role="reset-button"
+            title="Reset to Default Value"
+            onClick={this.onReset}
+          />
+        )}
         <label
           className={cn('input-text-label', Styles['input-text-label'])}
           htmlFor={this.props.id}
@@ -216,8 +239,14 @@ export class StatefulTextInput<
 
   public readonly state = { value: initState(this.props) };
 
-  public onValueChange = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    const value = convertInputValue(event.currentTarget.value, this.props.type);
+  public onValueChange = (
+    event: React.KeyboardEvent<HTMLInputElement> | React.MouseEvent<HTMLElement>
+  ) => {
+    const value =
+      'value' in event.currentTarget
+        ? convertInputValue(event.currentTarget.value, this.props.type)
+        : this.props.resetValue;
+
     this.setState({ value });
     this.props.onChange(event, value);
   };

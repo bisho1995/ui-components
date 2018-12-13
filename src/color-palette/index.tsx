@@ -26,6 +26,7 @@ import Styles from '../styles/color-palette.module.scss';
 export interface ColorPaletteProps {
   onMount: (rectangle: any) => void;
   toggleColorPalette: (rectangle: any) => void;
+  colorValue: ColorResult;
   onChangeComplete?: ColorWrapChangeHandler;
   textDisabled?: boolean;
   top?: number;
@@ -47,10 +48,10 @@ class ColorPalette extends React.Component<
   public render() {
     const { toggleColorPalette, top = 0, left = 0 } = this.props;
     const injectedProps = {
-      hex: this.props.hex,
-      hsl: this.props.hsl,
+      hex: this.props.colorValue.hex,
+      hsl: this.props.colorValue.hsl,
       onChange: this.onChange,
-      rgb: this.props.rgb,
+      rgb: this.props.colorValue.rgb,
     };
     return createPortal(
       <DismissableBackground onClick={toggleColorPalette}>
@@ -64,7 +65,7 @@ class ColorPalette extends React.Component<
           }}
         >
           <div className={Styles.saturation}>
-            <Saturation {...this.props} onChange={this.onChange} />
+            <Saturation {...this.props} {...injectedProps} />
           </div>
           <HueSlider {...injectedProps} />
           <ColorControls colorProps={injectedProps} />

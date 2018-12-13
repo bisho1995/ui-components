@@ -1,5 +1,6 @@
 /// <reference types="react" />
 import React from 'react';
+import { ColorResult, HSLColor, RGBColor } from 'react-color';
 import { HTMLInputElementProps } from './text-input';
 export declare function getPalettePosition(clientHeight: number, paletteTriggerRect: ClientRect, initialPaletteRect: ClientRect): {
     top: number;
@@ -10,16 +11,24 @@ export interface ColorPickerPropsTypes {
     name: string;
     id: string;
     resetValue?: string;
-    value: string;
+    initialValue: string;
     textDisabled?: boolean;
     onChange: (event: React.SyntheticEvent<any>, value: string) => void;
 }
-export declare class ColorPicker extends React.Component<ColorPickerPropsTypes & HTMLInputElementProps, {
+export interface ColorPickerState {
     displayColorPalette: boolean;
     top: number;
     left: number;
-}> {
+    colorValue: ColorResult;
+}
+export declare const defaultColorResult: ColorResult;
+export declare class ColorPicker extends React.Component<ColorPickerPropsTypes & HTMLInputElementProps, ColorPickerState> {
     readonly state: {
+        colorValue: {
+            hex: string;
+            hsl: HSLColor;
+            rgb: RGBColor;
+        };
         displayColorPalette: boolean;
         left: number;
         top: number;
@@ -32,5 +41,6 @@ export declare class ColorPicker extends React.Component<ColorPickerPropsTypes &
     private handleChangeFromColorPalette;
     private toggleColorPalette;
     private handleColorPaletteMount;
+    private colorResultFrom(colorStr);
 }
 export default ColorPicker;

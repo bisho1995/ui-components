@@ -1,0 +1,29 @@
+@import '../styles/global/variables.scss';
+
+.snippet-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.copy-button-tooltip {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 2;
+
+  &[data-tooltip] :global(.sg-icon):hover {
+    color: #fff;
+  }
+}
+
+.copy-button-container {
+  background: $copy-button-dark;
+  border: 1px solid $copy-button-dark;
+  border-radius: 2px;
+  padding: 3px 1px;
+  width: 25px;
+  height: 25px;
+  color: $steel-dark;
+  cursor: pointer;
+}

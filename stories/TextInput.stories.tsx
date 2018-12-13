@@ -77,6 +77,21 @@ stories.add('Text Input Simple with a value', () => (
     onBlur={action('onBlur Called')}
   />
 ));
+
+stories.add('Text Input Simple with a value and reset value', () => (
+  <StatefulTextInput
+    type="text"
+    label="Test Input"
+    isRequired={true}
+    isValid={true}
+    value="Reset me"
+    id="test-input-simple"
+    resetValue="I am the reset value"
+    onChange={action('Input Changed')}
+    onBlur={action('onBlur Called')}
+  />
+));
+
 stories.add('Text Input Large', () => (
   <StatefulTextInput
     type="text"

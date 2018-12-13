@@ -75,6 +75,20 @@ $black: #000;
 // colors - highlight
 $color-highlighter: rgba($mango, 0.6);
 
+// colors - ace editor with dark background
+$sg-blue-dark: #71ade4;
+$slate-40-dark: #9aa6b1;
+$ron-burgundy-dark: #ff5c5c;
+$burnt-orange-dark: #e87a5a;
+$carrot-dark: #e8a644;
+$mango-dark: #e3cc64;
+$light-gray-dark: #7c8b98;
+$steel-dark: #b9b9b9;
+$caribbean-dark: #00cee6;
+$color-highlighter-dark: #3b4958;
+$active-line-dark: #1f2b39;
+$copy-button-dark: #284462;
+
 // alerts
 $alert-success: #f1f7e9;
 $alert-success-text: #2e6b30;
@@ -364,6 +378,18 @@ $info-popup-z-index: 19000;
   white: $white;
   black: $black;
   color-highlighter: $color-highlighter;
+  sg-blue-dark: $sg-blue-dark;
+  slate-40-dark: $slate-40-dark;
+  ron-burgundy-dark: $ron-burgundy-dark;
+  burnt-orange-dark: $burnt-orange-dark;
+  carrot-dark: $carrot-dark;
+  mango-dark: $mango-dark;
+  light-gray-dark: $light-gray-dark;
+  steel-dark: $steel-dark;
+  caribbean-dark: $caribbean-dark;
+  color-highlighter-dark: $color-highlighter-dark;
+  active-line-dark: $active-line-dark;
+  copy-button-dark: $copy-button-dark;
   alert-success: $alert-success;
   alert-success-text: $alert-success-text;
   alert-warning: $alert-warning;
