@@ -137,6 +137,15 @@ return (
 - **Linting and Formatting**: UI Components makes use of TSLint to verify the quality of the code and look for easily-missed mistakes through static analysis.
 - **Versioning**: Do not bump the version of the library in the `package.json`. This will either be done automatically or done manually to batch a number of breaking changes or new features.
 
+## Adding an Icon
+
+The new icon needs to be added to the following places (copy the format for existing icons in each of these files):
+- The global variables.scss file.
+- The icon.module.scss file.
+- The icon.module.scss.d.ts file.
+
+The new icon also needs to be added to the files in the fonts > icons folder. 
+
 ## [RAPID Decision Making Framework][rapid]
 
 | Role          | Person or People                                             |

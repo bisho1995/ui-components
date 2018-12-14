@@ -34,6 +34,7 @@ export const sgIconDesktopView: string;
 export const sgIconDivider: string;
 export const sgIconDownload: string;
 export const sgIconExport: string;
+export const sgIconForms: string;
 export const sgIconDrag: string;
 export const sgIconEditorCode: string;
 export const sgIconEditorDesign: string;
