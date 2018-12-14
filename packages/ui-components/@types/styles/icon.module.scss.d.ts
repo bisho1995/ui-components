@@ -40,6 +40,7 @@ export const sgIconEditorDesign: string;
 export const sgIconEditorOld: string;
 export const sgIconEllipsis: string;
 export const sgIconEllipsisVertical: string;
+export const sgIconForms: string;
 export const sgIconGear: string;
 export const sgIconHelp: string;
 export const sgIconImage: string;

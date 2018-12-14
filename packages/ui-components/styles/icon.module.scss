@@ -242,6 +242,12 @@
   }
 }
 
+.sg-icon-forms {
+  &::before {
+    content: $icon-forms;
+  }
+}
+
 .sg-icon-gear {
   &::before {
     content: $icon-gear;

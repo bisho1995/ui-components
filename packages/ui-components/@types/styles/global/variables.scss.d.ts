@@ -162,6 +162,7 @@ export const iconEditorOld: string;
 export const iconEllipsis: string;
 export const iconEllipsisVertical: string;
 export const iconExport: string;
+export const iconForms: string;
 export const iconGear: string;
 export const iconHelp: string;
 export const iconImage: string;
