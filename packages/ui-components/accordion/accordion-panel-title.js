@@ -8,9 +8,17 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import React from 'react';
+import Badge from '../badge';
+import cn from '../utilities/classnames';
+import Styles from './accordion.module.scss';
 const AccordionPanelTitle = (_a) => {
-    var { text, style, className } = _a, attributes = __rest(_a, ["text", "style", "className"]);
-    return (React.createElement("h2", Object.assign({ className: className, style: style }, attributes), text));
+    var { text, style, className, badgeColor, badgeContent } = _a, attributes = __rest(_a, ["text", "style", "className", "badgeColor", "badgeContent"]);
+    return (React.createElement("h2", Object.assign({ className: cn(className, {
+            'has-badge': !!badgeContent,
+            [Styles['has-badge']]: !!badgeContent,
+        }), style: style }, attributes),
+        text,
+        badgeContent && React.createElement(Badge, { color: badgeColor }, badgeContent)));
 };
 export default AccordionPanelTitle;
 //# sourceMappingURL=accordion-panel-title.js.map

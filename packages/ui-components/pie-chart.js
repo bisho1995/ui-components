@@ -43,25 +43,26 @@ export class PieChart extends React.Component {
                 React.createElement("div", { className: Styles['pie-chart-svg'] },
                     React.createElement("svg", { width: "100%", height: "100%", viewBox: "0 0 42 42", className: "donut" },
                         React.createElement("circle", { className: "donut-hole", cx: "21", cy: "21", r: "15.91549430918954", fill: "#fff" }),
-                        React.createElement("circle", { className: "donut-ring", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#9e9e9e", "stroke-width": "2" }),
-                        React.createElement("circle", { className: "donut-segment", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#9e9e9e", "stroke-width": "2", "stroke-dasharray": `${percentages.notRecieved} ${100 -
-                                percentages.notRecieved}`, "stroke-dashoffset": `${125 -
+                        React.createElement("circle", { className: "donut-ring", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#9e9e9e", strokeWidth: "2" }),
+                        React.createElement("circle", { className: "donut-segment", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#9e9e9e", strokeWidth: "2", strokeDasharray: `${percentages.notRecieved} ${100 -
+                                percentages.notRecieved}`, strokeDashoffset: `${125 -
                                 percentages.passed -
                                 percentages.failed}` }),
-                        React.createElement("circle", { className: "donut-segment", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#b71c1c", "stroke-width": "2", "stroke-dasharray": `${percentages.failed} ${100 -
-                                percentages.failed}`, "stroke-dashoffset": `${125 - percentages.passed}` }),
-                        React.createElement("circle", { className: "donut-segment", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#18c96e", "stroke-width": "2", "stroke-dasharray": `${percentages.passed} ${100 -
-                                percentages.passed}`, "stroke-dashoffset": "25" })),
-                    React.createElement("span", { className: cn(Styles['pie-chart-number'], 'is-size-h2') },
-                        percentages.passed,
-                        "%")),
+                        React.createElement("circle", { className: "donut-segment", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#b71c1c", strokeWidth: "2", strokeDasharray: `${percentages.failed} ${100 -
+                                percentages.failed}`, strokeDashoffset: `${125 - percentages.passed}` }),
+                        React.createElement("circle", { className: "donut-segment", cx: "21", cy: "21", r: "15.91549430918954", fill: "transparent", stroke: "#18c96e", strokeWidth: "2", strokeDasharray: `${percentages.passed} ${100 -
+                                percentages.passed}`, strokeDashoffset: "25" })),
+                    React.createElement("span", { className: cn(Styles['pie-chart-number'], 'is-size-h2') }, !isNaN(percentages.passed) && `${percentages.passed}%`)),
                 React.createElement("ul", { className: Styles['pie-chart-legend'] },
                     React.createElement("li", null,
-                        React.createElement("span", { className: "label label-delivered" }, `${percentages.passed}% passed`)),
+                        React.createElement("span", { className: "label label-delivered" }, `${percentages.passed ||
+                            0}% passed`)),
                     React.createElement("li", null,
-                        React.createElement("span", { className: "label label-error" }, `${percentages.failed}% failed`)),
+                        React.createElement("span", { className: "label label-error" }, `${percentages.failed ||
+                            0}% failed`)),
                     React.createElement("li", null,
-                        React.createElement("span", { className: "label label-draft" }, `${percentages.notRecieved}% not received`)))),
+                        React.createElement("span", { className: "label label-draft" }, `${percentages.notRecieved ||
+                            0}% not received`)))),
             React.createElement("span", { className: "has-underline is-size-h2", "data-tooltip": tooltip, "data-tooltip-pos": "down" }, title)));
     }
 }

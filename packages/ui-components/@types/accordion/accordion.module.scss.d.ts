@@ -2,6 +2,7 @@ export const accordionWrapper: string;
 export const isEditor: string;
 export const accordionTitle: string;
 export const accordionContent: string;
+export const hasBadge: string;
 export const accordionPanel: string;
 export const hasChild: string;
 export const isVisible: string;

@@ -50,11 +50,11 @@ stories.add('Accordion - Nested with checkbox', () => {
             return (React.createElement(Accordion, null,
                 React.createElement(AccordionPanel, { title: React.createElement(AccordionPanelTitle, { text: "Fields" }), open: true },
                     React.createElement(Accordion, null,
-                        React.createElement(AccordionPanel, { title: (React.createElement(Checkbox, { id: "accordion-checkbox-example", label: "First Name", checked: checked, onChange: this.onCheckboxChange })) },
+                        React.createElement(AccordionPanel, { title: React.createElement(Checkbox, { id: "accordion-checkbox-example", label: "First Name", checked: checked, onChange: this.onCheckboxChange }) },
                             React.createElement("p", null, LOREM_IPSUM))))));
         }
     }
-    return (React.createElement(Example, null));
+    return React.createElement(Example, null);
 });
 stories.add('Accordion - Large', () => (React.createElement(Accordion, { large: true },
     React.createElement(AccordionPanel, { title: React.createElement(Fragment, null,
@@ -63,6 +63,12 @@ stories.add('Accordion - Large', () => (React.createElement(Accordion, { large: 
             React.createElement(AccordionPanelDescription, { text: "Accordion title description." })) },
         React.createElement("p", null, LOREM_IPSUM)),
     React.createElement(AccordionPanel, { title: React.createElement(AccordionPanelTitle, { text: "Accordion with no icon/text" }) },
+        React.createElement("p", null, LOREM_IPSUM)))));
+stories.add('Accordion - Large - With Badge', () => (React.createElement(Accordion, { large: true },
+    React.createElement(AccordionPanel, { title: React.createElement(Fragment, null,
+            React.createElement(AccordionPanelIcon, { iconType: "status-negative" }),
+            React.createElement(AccordionPanelTitle, { text: "Accordion title badge", badgeContent: "b2b", badgeColor: "sg-blue" }),
+            React.createElement(AccordionPanelDescription, { text: "Accordion title description." })) },
         React.createElement("p", null, LOREM_IPSUM)))));
 const CardContent = ({ title, iconType }) => (React.createElement("p", null,
     React.createElement(Icon, { type: iconType }),

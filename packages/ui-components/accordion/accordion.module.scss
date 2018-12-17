@@ -21,6 +21,16 @@
     }
   }
 
+  .has-badge {
+    :global(.badge) {
+      position: absolute;
+      top: calc(50% - 8px);
+      right: 90px;
+      margin-bottom: 0;
+      pointer-events: none;
+    }
+  }
+
   p {
     font-size: 13px;
     line-height: 20px;
@@ -91,7 +101,6 @@
     display: inline-block;
     margin-bottom: 0;
   }
-
 }
 
 .accordion-check-circle::before {
