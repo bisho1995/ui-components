@@ -12,7 +12,7 @@ exports[`Storyshots Accordion Accordion - Caret Left 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -60,7 +60,7 @@ exports[`Storyshots Accordion Accordion - Caret Left 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -108,7 +108,7 @@ exports[`Storyshots Accordion Accordion - Caret Left 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -305,6 +305,77 @@ exports[`Storyshots Accordion Accordion - Editor 1`] = `
 </div>
 `;
 
+exports[`Storyshots Accordion Accordion - Large - With Badge 1`] = `
+<div
+  className="accordion-wrapper accordion-large"
+>
+  <div
+    className="accordion-panel"
+  >
+    <div
+      className="accordion-title"
+      onClick={[Function]}
+    >
+      <i
+        className="accordion-icon sg-icon sg-icon-status-negative"
+        onClick={undefined}
+        style={null}
+      />
+      <h2
+        className="has-badge"
+        style={undefined}
+      >
+        Accordion title badge
+        <span
+          className="badge sg-blue"
+        >
+          b2b
+        </span>
+      </h2>
+      <p
+        className={undefined}
+        style={undefined}
+      >
+        Accordion title description.
+      </p>
+    </div>
+    <div
+      aria-hidden={true}
+      className="rah-static rah-static--height-zero"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        className={undefined}
+        style={Object {}}
+      >
+        <div
+          className="accordion-content"
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Vestibulum vehicula semper eleifend. Morbi tincidunt, magna non hendrerit malesuada,
+  ex est pulvinar nisi, ac luctus lorem quam vel nibh. Integer at tortor luctus
+  dui egestas consequat. Donec ut nibh lorem. Phasellus sed sapien lobortis,
+  egestas lacus nec, vehicula lorem. Donec hendrerit nibh sed velit placerat
+  aliquet. Morbi tristique pretium lorem, nec pretium turpis mattis vel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Accordion Accordion - Large 1`] = `
 <div
   className="accordion-wrapper accordion-large"
@@ -322,7 +393,7 @@ exports[`Storyshots Accordion Accordion - Large 1`] = `
         style={null}
       />
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion title with icon and intro text
@@ -376,7 +447,7 @@ exports[`Storyshots Accordion Accordion - Large 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion with no icon/text
@@ -431,7 +502,7 @@ exports[`Storyshots Accordion Accordion - Nested 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Primary Accordion Title 1
@@ -565,7 +636,7 @@ exports[`Storyshots Accordion Accordion - Nested 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Primary Accordion Title 2
@@ -620,7 +691,7 @@ exports[`Storyshots Accordion Accordion - Nested with checkbox 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Fields
@@ -731,7 +802,7 @@ exports[`Storyshots Accordion Accordion - Standard 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -779,7 +850,7 @@ exports[`Storyshots Accordion Accordion - Standard 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -827,7 +898,7 @@ exports[`Storyshots Accordion Accordion - Standard 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
