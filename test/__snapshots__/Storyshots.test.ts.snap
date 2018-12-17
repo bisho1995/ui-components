@@ -12,7 +12,7 @@ exports[`Storyshots Accordion Accordion - Caret Left 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -60,7 +60,7 @@ exports[`Storyshots Accordion Accordion - Caret Left 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -108,7 +108,7 @@ exports[`Storyshots Accordion Accordion - Caret Left 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -305,6 +305,77 @@ exports[`Storyshots Accordion Accordion - Editor 1`] = `
 </div>
 `;
 
+exports[`Storyshots Accordion Accordion - Large - With Badge 1`] = `
+<div
+  className="accordion-wrapper accordion-large"
+>
+  <div
+    className="accordion-panel"
+  >
+    <div
+      className="accordion-title"
+      onClick={[Function]}
+    >
+      <i
+        className="accordion-icon sg-icon sg-icon-status-negative"
+        onClick={undefined}
+        style={null}
+      />
+      <h2
+        className="has-badge"
+        style={undefined}
+      >
+        Accordion title badge
+        <span
+          className="badge sg-blue"
+        >
+          b2b
+        </span>
+      </h2>
+      <p
+        className={undefined}
+        style={undefined}
+      >
+        Accordion title description.
+      </p>
+    </div>
+    <div
+      aria-hidden={true}
+      className="rah-static rah-static--height-zero"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        className={undefined}
+        style={Object {}}
+      >
+        <div
+          className="accordion-content"
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Vestibulum vehicula semper eleifend. Morbi tincidunt, magna non hendrerit malesuada,
+  ex est pulvinar nisi, ac luctus lorem quam vel nibh. Integer at tortor luctus
+  dui egestas consequat. Donec ut nibh lorem. Phasellus sed sapien lobortis,
+  egestas lacus nec, vehicula lorem. Donec hendrerit nibh sed velit placerat
+  aliquet. Morbi tristique pretium lorem, nec pretium turpis mattis vel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Accordion Accordion - Large 1`] = `
 <div
   className="accordion-wrapper accordion-large"
@@ -322,7 +393,7 @@ exports[`Storyshots Accordion Accordion - Large 1`] = `
         style={null}
       />
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion title with icon and intro text
@@ -376,7 +447,7 @@ exports[`Storyshots Accordion Accordion - Large 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion with no icon/text
@@ -431,7 +502,7 @@ exports[`Storyshots Accordion Accordion - Nested 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Primary Accordion Title 1
@@ -565,7 +636,7 @@ exports[`Storyshots Accordion Accordion - Nested 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Primary Accordion Title 2
@@ -620,7 +691,7 @@ exports[`Storyshots Accordion Accordion - Nested with checkbox 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Fields
@@ -731,7 +802,7 @@ exports[`Storyshots Accordion Accordion - Standard 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -779,7 +850,7 @@ exports[`Storyshots Accordion Accordion - Standard 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -827,7 +898,7 @@ exports[`Storyshots Accordion Accordion - Standard 1`] = `
       onClick={[Function]}
     >
       <h2
-        className={undefined}
+        className=""
         style={undefined}
       >
         Accordion Title
@@ -10761,7 +10832,7 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -10770,9 +10841,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-dasharray="18 82"
-            stroke-dashoffset="43"
-            stroke-width="2"
+            strokeDasharray="18 82"
+            strokeDashoffset="43"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -10781,9 +10852,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#b71c1c"
-            stroke-dasharray="23 77"
-            stroke-dashoffset="66"
-            stroke-width="2"
+            strokeDasharray="23 77"
+            strokeDashoffset="66"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -10792,16 +10863,15 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#18c96e"
-            stroke-dasharray="59 41"
-            stroke-dashoffset="25"
-            stroke-width="2"
+            strokeDasharray="59 41"
+            strokeDashoffset="25"
+            strokeWidth="2"
           />
         </svg>
         <span
           className="pie-chart-number is-size-h2"
         >
-          59
-          %
+          59%
         </span>
       </div>
       <ul
@@ -10872,7 +10942,7 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -10881,9 +10951,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-dasharray="0 100"
-            stroke-dashoffset="25"
-            stroke-width="2"
+            strokeDasharray="0 100"
+            strokeDashoffset="25"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -10892,9 +10962,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#b71c1c"
-            stroke-dasharray="12 88"
-            stroke-dashoffset="37"
-            stroke-width="2"
+            strokeDasharray="12 88"
+            strokeDashoffset="37"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -10903,16 +10973,15 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#18c96e"
-            stroke-dasharray="88 12"
-            stroke-dashoffset="25"
-            stroke-width="2"
+            strokeDasharray="88 12"
+            strokeDashoffset="25"
+            strokeWidth="2"
           />
         </svg>
         <span
           className="pie-chart-number is-size-h2"
         >
-          88
-          %
+          88%
         </span>
       </div>
       <ul
@@ -10983,7 +11052,7 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -10992,9 +11061,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-dasharray="7 93"
-            stroke-dashoffset="32"
-            stroke-width="2"
+            strokeDasharray="7 93"
+            strokeDashoffset="32"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -11003,9 +11072,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#b71c1c"
-            stroke-dasharray="93 7"
-            stroke-dashoffset="125"
-            stroke-width="2"
+            strokeDasharray="93 7"
+            strokeDashoffset="125"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -11014,16 +11083,15 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#18c96e"
-            stroke-dasharray="0 100"
-            stroke-dashoffset="25"
-            stroke-width="2"
+            strokeDasharray="0 100"
+            strokeDashoffset="25"
+            strokeWidth="2"
           />
         </svg>
         <span
           className="pie-chart-number is-size-h2"
         >
-          0
-          %
+          0%
         </span>
       </div>
       <ul
@@ -11094,7 +11162,7 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -11103,9 +11171,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#9e9e9e"
-            stroke-dasharray="4 96"
-            stroke-dashoffset="28"
-            stroke-width="2"
+            strokeDasharray="4 96"
+            strokeDashoffset="28"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -11114,9 +11182,9 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#b71c1c"
-            stroke-dasharray="46 54"
-            stroke-dashoffset="74"
-            stroke-width="2"
+            strokeDasharray="46 54"
+            strokeDashoffset="74"
+            strokeWidth="2"
           />
           <circle
             className="donut-segment"
@@ -11125,16 +11193,15 @@ Array [
             fill="transparent"
             r="15.91549430918954"
             stroke="#18c96e"
-            stroke-dasharray="51 49"
-            stroke-dashoffset="25"
-            stroke-width="2"
+            strokeDasharray="51 49"
+            strokeDashoffset="25"
+            strokeWidth="2"
           />
         </svg>
         <span
           className="pie-chart-number is-size-h2"
         >
-          51
-          %
+          51%
         </span>
       </div>
       <ul
