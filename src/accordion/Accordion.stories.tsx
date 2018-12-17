@@ -82,19 +82,18 @@ stories.add('Accordion - Nested with checkbox', () => {
 
       return (
         <Accordion>
-          <AccordionPanel
-            title={<AccordionPanelTitle text="Fields" />}
-            open
-          >
+          <AccordionPanel title={<AccordionPanelTitle text="Fields" />} open>
             <Accordion>
-              <AccordionPanel title={(
-                <Checkbox
-                  id="accordion-checkbox-example"
-                  label="First Name"
-                  checked={checked}
-                  onChange={this.onCheckboxChange}
-                />
-              )}>
+              <AccordionPanel
+                title={
+                  <Checkbox
+                    id="accordion-checkbox-example"
+                    label="First Name"
+                    checked={checked}
+                    onChange={this.onCheckboxChange}
+                  />
+                }
+              >
                 <p>{LOREM_IPSUM}</p>
               </AccordionPanel>
             </Accordion>
@@ -104,11 +103,9 @@ stories.add('Accordion - Nested with checkbox', () => {
     }
     private onCheckboxChange = (e: React.MouseEvent) => {
       this.setState(({ checked }) => ({ checked: !checked }));
-    }
+    };
   }
-  return (
-    <Example />
-  );
+  return <Example />;
 });
 
 stories.add('Accordion - Large', () => (
@@ -126,6 +123,26 @@ stories.add('Accordion - Large', () => (
     </AccordionPanel>
     <AccordionPanel
       title={<AccordionPanelTitle text="Accordion with no icon/text" />}
+    >
+      <p>{LOREM_IPSUM}</p>
+    </AccordionPanel>
+  </Accordion>
+));
+
+stories.add('Accordion - Large - With Badge', () => (
+  <Accordion large>
+    <AccordionPanel
+      title={
+        <Fragment>
+          <AccordionPanelIcon iconType="status-negative" />
+          <AccordionPanelTitle
+            text="Accordion title badge"
+            badgeContent="b2b"
+            badgeColor="sg-blue"
+          />
+          <AccordionPanelDescription text="Accordion title description." />
+        </Fragment>
+      }
     >
       <p>{LOREM_IPSUM}</p>
     </AccordionPanel>
