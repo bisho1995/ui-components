@@ -43,7 +43,7 @@ export class PieChart extends React.Component<PieChartProps> {
                 r="15.91549430918954"
                 fill="transparent"
                 stroke="#9e9e9e"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <circle
                 className="donut-segment"
@@ -52,10 +52,10 @@ export class PieChart extends React.Component<PieChartProps> {
                 r="15.91549430918954"
                 fill="transparent"
                 stroke="#9e9e9e"
-                stroke-width="2"
-                stroke-dasharray={`${percentages.notRecieved} ${100 -
+                strokeWidth="2"
+                strokeDasharray={`${percentages.notRecieved} ${100 -
                   percentages.notRecieved}`}
-                stroke-dashoffset={`${125 -
+                strokeDashoffset={`${125 -
                   percentages.passed -
                   percentages.failed}`}
               />
@@ -66,10 +66,10 @@ export class PieChart extends React.Component<PieChartProps> {
                 r="15.91549430918954"
                 fill="transparent"
                 stroke="#b71c1c"
-                stroke-width="2"
-                stroke-dasharray={`${percentages.failed} ${100 -
+                strokeWidth="2"
+                strokeDasharray={`${percentages.failed} ${100 -
                   percentages.failed}`}
-                stroke-dashoffset={`${125 - percentages.passed}`}
+                strokeDashoffset={`${125 - percentages.passed}`}
               />
               <circle
                 className="donut-segment"
@@ -78,31 +78,28 @@ export class PieChart extends React.Component<PieChartProps> {
                 r="15.91549430918954"
                 fill="transparent"
                 stroke="#18c96e"
-                stroke-width="2"
-                stroke-dasharray={`${percentages.passed} ${100 -
+                strokeWidth="2"
+                strokeDasharray={`${percentages.passed} ${100 -
                   percentages.passed}`}
-                stroke-dashoffset="25"
+                strokeDashoffset="25"
               />
             </svg>
             <span className={cn(Styles['pie-chart-number'], 'is-size-h2')}>
-              {percentages.passed}%
+              {!isNaN(percentages.passed) && `${percentages.passed}%`}
             </span>
           </div>
           <ul className={Styles['pie-chart-legend']}>
             <li>
-              <span className="label label-delivered">{`${
-                percentages.passed
-              }% passed`}</span>
+              <span className="label label-delivered">{`${percentages.passed ||
+                0}% passed`}</span>
             </li>
             <li>
-              <span className="label label-error">{`${
-                percentages.failed
-              }% failed`}</span>
+              <span className="label label-error">{`${percentages.failed ||
+                0}% failed`}</span>
             </li>
             <li>
-              <span className="label label-draft">{`${
-                percentages.notRecieved
-              }% not received`}</span>
+              <span className="label label-draft">{`${percentages.notRecieved ||
+                0}% not received`}</span>
             </li>
           </ul>
         </div>
