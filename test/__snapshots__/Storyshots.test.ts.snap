@@ -10637,6 +10637,61 @@ exports[`Storyshots Meter Meter Below 50 1`] = `
 </div>
 `;
 
+exports[`Storyshots Metric Card Standard (with Custom Children) 1`] = `
+<div
+  className="card metric-card"
+>
+  <h4>
+    Clicks
+  </h4>
+  <p
+    className="card-data"
+  >
+    200
+  </p>
+  <span>
+    Total clicks for link
+  </span>
+</div>
+`;
+
+exports[`Storyshots Metric Card Standard 1`] = `
+<div
+  className="card metric-card"
+>
+  <h4>
+    Last Updated
+  </h4>
+  <p
+    className="card-data"
+  >
+    12/21/18
+  </p>
+</div>
+`;
+
+exports[`Storyshots Metric Card Without a body 1`] = `
+<div
+  className="card metric-card"
+>
+  <h4>
+    Clicks
+  </h4>
+</div>
+`;
+
+exports[`Storyshots Metric Card Without a title 1`] = `
+<div
+  className="card metric-card"
+>
+  <p
+    className="card-data"
+  >
+    10,000
+  </p>
+</div>
+`;
+
 exports[`Storyshots NumberedSteps Numbered Steps with longer content 1`] = `
 <div
   className="row"

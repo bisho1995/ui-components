@@ -33,6 +33,7 @@ export { ImageLibrary } from './image-library';
 export { Label } from './label';
 export { Loader } from './loader';
 export { Meter } from './meter';
+export { MetricCard } from './metric-card';
 export { ModuleCard } from './module-card';
 export { NumberedStep, NumberedSteps } from './numbered-steps';
 export { Progress, ProgressStage } from './progress';
