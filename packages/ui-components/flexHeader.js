@@ -14,7 +14,7 @@ import Styles from './styles/flex-header.module.scss';
 import cn from './utilities/classnames';
 export class FlexHeader extends Component {
     render() {
-        const _a = this.props, { className, creditsCount, onClose, headerActions, headerTabs, title, tooltipText } = _a, attributes = __rest(_a, ["className", "creditsCount", "onClose", "headerActions", "headerTabs", "title", "tooltipText"]);
+        const _a = this.props, { className, creditsCount, onClose, headerActions, headerTabs, title, tooltipText, tooltipLength: tooltipSize } = _a, attributes = __rest(_a, ["className", "creditsCount", "onClose", "headerActions", "headerTabs", "title", "tooltipText", "tooltipLength"]);
         return (React.createElement("header", { className: Styles['flex-header'] },
             React.createElement("div", null,
                 onClose && (React.createElement("a", { className: Styles['flex-header-action'], onClick: onClose },
@@ -22,7 +22,7 @@ export class FlexHeader extends Component {
                 React.createElement("div", { className: Styles['flex-header-title'] },
                     React.createElement("h3", null,
                         title,
-                        tooltipText && (React.createElement("span", { "data-tooltip": tooltipText, "data-tooltip-pos": "down" },
+                        tooltipText && (React.createElement("span", { "data-tooltip": tooltipText, "data-tooltip-pos": "down", "data-tooltip-length": tooltipSize },
                             React.createElement(Icon, { type: "info-circle" }))))),
                 headerTabs),
             React.createElement("div", { className: Styles['flex-header-right'] },

@@ -1,5 +1,6 @@
 /// <reference types="react" />
 import React, { Component } from 'react';
+import { TooltipLength } from './tooltip';
 import { IconType } from './types/icons';
 export interface FlexHeaderProps {
     className?: string;
@@ -8,6 +9,7 @@ export interface FlexHeaderProps {
     headerTabs?: React.ReactNode;
     title: string;
     tooltipText?: string;
+    tooltipLength?: TooltipLength;
     onClose?: (event: any) => void;
 }
 export declare class FlexHeader extends Component<FlexHeaderProps> {

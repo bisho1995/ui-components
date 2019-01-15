@@ -1,6 +1,7 @@
 /// <reference types="react" />
 import React, { Component } from 'react';
 import { ModalProps } from './utilities/modals';
+import { TooltipLength } from './tooltip';
 export interface FullScreenModelProps extends ModalProps {
     children?: React.ReactNode;
     className?: string;
@@ -12,6 +13,7 @@ export interface FullScreenModelProps extends ModalProps {
     headerTabs?: React.ReactNode;
     title: string;
     tooltipText?: string;
+    tooltipLength?: TooltipLength;
 }
 export declare class FullscreenModal extends Component<FullScreenModelProps> {
     static defaultProps: Partial<FullScreenModelProps>;
