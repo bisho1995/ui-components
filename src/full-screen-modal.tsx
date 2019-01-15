@@ -8,6 +8,7 @@ import cn from './utilities/classnames';
 import { ModalProps, modalWillReceiveProps } from './utilities/modals';
 
 import Styles from './styles/fullscreen-modal.module.scss';
+import { TooltipLength } from './tooltip';
 export interface FullScreenModelProps extends ModalProps {
   children?: React.ReactNode;
   className?: string;
@@ -19,6 +20,7 @@ export interface FullScreenModelProps extends ModalProps {
   headerTabs?: React.ReactNode;
   title: string;
   tooltipText?: string;
+  tooltipLength?: TooltipLength;
 }
 
 export class FullscreenModal extends Component<FullScreenModelProps> {
@@ -46,6 +48,7 @@ export class FullscreenModal extends Component<FullScreenModelProps> {
       headerTabs,
       title,
       tooltipText,
+      tooltipLength,
       ...attributes
     } = this.props;
 
@@ -67,6 +70,7 @@ export class FullscreenModal extends Component<FullScreenModelProps> {
           onClose={onClose}
           title={title}
           tooltipText={tooltipText}
+          tooltipLength={tooltipLength}
         />
         <div className={cn('modal-content', { 'has-padding': hasPadding })}>
           {children}

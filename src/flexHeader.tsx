@@ -6,6 +6,7 @@ import Counter from './counter';
 import { Icon } from './icon';
 
 import Styles from './styles/flex-header.module.scss';
+import { TooltipLength } from './tooltip';
 import { IconType } from './types/icons';
 import cn from './utilities/classnames';
 
@@ -16,6 +17,7 @@ export interface FlexHeaderProps {
   headerTabs?: React.ReactNode;
   title: string;
   tooltipText?: string;
+  tooltipLength?: TooltipLength;
   onClose?: (event: any) => void;
 }
 
@@ -29,6 +31,7 @@ export class FlexHeader extends Component<FlexHeaderProps> {
       headerTabs,
       title,
       tooltipText,
+      tooltipLength: tooltipSize,
       ...attributes
     } = this.props;
 
@@ -44,7 +47,11 @@ export class FlexHeader extends Component<FlexHeaderProps> {
             <h3>
               {title}
               {tooltipText && (
-                <span data-tooltip={tooltipText} data-tooltip-pos="down">
+                <span
+                  data-tooltip={tooltipText}
+                  data-tooltip-pos="down"
+                  data-tooltip-length={tooltipSize}
+                >
                   <Icon type="info-circle" />
                 </span>
               )}

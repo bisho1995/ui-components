@@ -67,5 +67,5 @@ loaderStories.add('Image Library', () =>
 loaderStories.add('Email Preview', () =>
   <FlexHeader title="Title Goes Here" onClose={()=>{}} headerActions={edit} />);
 
-loaderStories.add('Edit Code', () =>
-  <FlexHeader title="Email Code Module" onClose={()=>{}} tooltipText="sup" headerActions={renderActions} />);
+loaderStories.add('Edit Code - with a large tooltip', () =>
+  <FlexHeader title="Email Code Module" onClose={()=>{}} tooltipText={'Edit Code Module '.repeat(10)} tooltipLength="large" headerActions={renderActions} />);

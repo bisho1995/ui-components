@@ -52,7 +52,8 @@ stories.add('Fullscreen Modal with renderProps', () => (
         isOpen={isOpen}
         onClose={onClose}
         title="With Render Props"
-        tooltipText="here is a tooltip"
+        tooltipText={'here is a tooltip '.repeat(10)}
+        tooltipLength='large'
         renderHeaderActions={() => (
           <ButtonList onDark>
             <Button>

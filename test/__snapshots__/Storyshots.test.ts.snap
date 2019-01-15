@@ -8909,7 +8909,7 @@ exports[`Storyshots FilterableList FilterableList with Two Input Fields and Cust
 </section>
 `;
 
-exports[`Storyshots Flex Header Edit Code 1`] = `
+exports[`Storyshots Flex Header Edit Code - with a large tooltip 1`] = `
 <header
   className="flex-header"
 >
@@ -8930,7 +8930,8 @@ exports[`Storyshots Flex Header Edit Code 1`] = `
       <h3>
         Email Code Module
         <span
-          data-tooltip="sup"
+          data-tooltip="Edit Code Module Edit Code Module Edit Code Module Edit Code Module Edit Code Module Edit Code Module Edit Code Module Edit Code Module Edit Code Module Edit Code Module "
+          data-tooltip-length="large"
           data-tooltip-pos="down"
         >
           <i
@@ -9404,7 +9405,8 @@ exports[`Storyshots FullScreen Modal Fullscreen Modal with renderProps 1`] = `
           <h3>
             With Render Props
             <span
-              data-tooltip="here is a tooltip"
+              data-tooltip="here is a tooltip here is a tooltip here is a tooltip here is a tooltip here is a tooltip here is a tooltip here is a tooltip here is a tooltip here is a tooltip here is a tooltip "
+              data-tooltip-length="large"
               data-tooltip-pos="down"
             >
               <i
