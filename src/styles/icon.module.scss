@@ -145,6 +145,30 @@
   }
 }
 
+.sg-icon-column-one {
+  &::before {
+    content: $icon-column-one;
+  }
+}
+
+.sg-icon-column-two {
+  &::before {
+    content: $icon-column-two;
+  }
+}
+
+.sg-icon-column-three {
+  &::before {
+    content: $icon-column-three;
+  }
+}
+
+.sg-icon-column-four {
+  &::before {
+    content: $icon-column-four;
+  }
+}
+
 .sg-icon-columns {
   &::before {
     content: $icon-columns;
