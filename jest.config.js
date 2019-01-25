@@ -5,7 +5,7 @@ module.exports = {
     '^.+\\.(css|less|scss)$': 'identity-obj-proxy',
   },
   transform: {
-    '\\.(js|jsx)$': '<rootDir>/node_modules/babel-jest',
+    '\\.(js|jsx)$': 'babel-jest',
     '\\.(ts|tsx)$': 'ts-jest',
   },
   testMatch: ['**/*.test.(ts|tsx|js)'],

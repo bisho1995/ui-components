@@ -25,6 +25,9 @@
   "env": {
     "test": {
       "plugins": ["dynamic-import-node", "require-context-hook"]
+    },
+    "jest": {
+      "plugins": ["require-context-hook"]
     }
   }
 }

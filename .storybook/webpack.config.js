@@ -9,6 +9,8 @@ module.exports = function(config, env, storybookBaseConfig) {
   // To show JSX in storybook:
   // Transpile TSX to JSX with "preserve"
   // Use babel to transpile JSX to ES5 JS
+  config.output.pathinfo = false;
+
   config.module.rules.push({
     test: /\.tsx?$/,
     exclude: [/node_modules/, /test_image/, /packages/],
@@ -18,6 +20,7 @@ module.exports = function(config, env, storybookBaseConfig) {
         loader: 'ts-loader',
         options: {
           transpileOnly: true,
+          experimentalWatchApi: true,
         },
       },
     ],
