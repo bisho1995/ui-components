@@ -1,4 +1,5 @@
-import initStoryshots, { imageSnapshot } from '@storybook/addon-storyshots';
+import initStoryshots from '@storybook/addon-storyshots';
+import { imageSnapshot } from '@storybook/addon-storyshots-puppeteer';
 import path from 'path';
 import process from 'process';
 
