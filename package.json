@@ -4,8 +4,7 @@
   "description": "Resuable UI components for Sendgrid's applications.",
   "scripts": {
     "start": "yarn run storybook",
-    "declaresass": "webpack",
-    "build": "webpack && tsc --newline lf && bash copyStyles.sh",
+    "build": "tsc --newline lf && bash copyStyles.sh",
     "lerna": "lerna publish",
     "lint": "tslint --project ./tsconfig.json",
     "lint-fix": "tslint --project ./tsconfig.json --fix",
@@ -96,13 +95,6 @@
     "react-test-renderer": "^16.3.2",
     "regenerator-runtime": "^0.11.1",
     "rimraf": "^2.6.2",
-    "rollup": "^0.55.0",
-    "rollup-plugin-commonjs": "^8.2.6",
-    "rollup-plugin-copy": "^0.2.3",
-    "rollup-plugin-json": "^2.3.0",
-    "rollup-plugin-node-resolve": "^3.0.2",
-    "rollup-plugin-postcss": "^1.6.1",
-    "rollup-plugin-typescript2": "^0.13.0",
     "sass-loader": "^6.0.6",
     "source-map": "^0.7.0",
     "source-map-loader": "^0.2.3",
@@ -113,7 +105,6 @@
     "tslint-config-prettier": "^1.13.0",
     "tslint-react": "^3.2.0",
     "typescript": "2.8.1",
-    "typings-for-css-modules-loader": "^1.7.0",
     "webpack": "^3.11.0"
   },
   "peerDependencies": {
