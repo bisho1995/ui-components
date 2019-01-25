@@ -48,12 +48,12 @@
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^4.1.11",
     "@storybook/addon-knobs": "^4.1.11",
     "@storybook/addon-storyshots": "^4.1.11",
-    "@storybook/addon-storysource": "^3.4.10",
     "@storybook/addons": "^4.1.11",
     "@storybook/react": "^4.1.11",
     "@types/acorn": "^4.0.3",
@@ -73,6 +73,7 @@
     "@types/tinycolor2": "^1.4.1",
     "awesome-typescript-loader": "^3.4.1",
     "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
     "babel-plugin-root-import": "^5.1.0",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
