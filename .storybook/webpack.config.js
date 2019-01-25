@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = function(config, env, storybookBaseConfig) {
   // console.log(storybookBaseConfig);
@@ -15,7 +16,10 @@ module.exports = function(config, env, storybookBaseConfig) {
     loaders: [
       {
         loader: 'ts-loader',
-        // options: {},
+        options: {
+          transpileOnly: true,
+          experimentalWatchApi: true,
+        },
       },
     ],
   });
@@ -105,6 +109,12 @@ module.exports = function(config, env, storybookBaseConfig) {
 
   config.plugins = config.plugins.filter(
     plugin => plugin.constructor.name !== 'UglifyJsPlugin'
+  );
+
+  config.plugins.push(
+    new ForkTsCheckerWebpackPlugin({
+      workers: 2,
+    })
   );
 
   return config;
