@@ -1,40 +1,23 @@
 const path = require('path');
-const storybookBaseConfig = require('@storybook/react/dist/server/config/defaults/webpack.config.js');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = function(config, env) {
-  config = storybookBaseConfig(config, env);
+module.exports = function(config, env, storybookBaseConfig) {
+  // console.log(storybookBaseConfig);
+  // config = storybookBaseConfig(config, env);
 
   // To show JSX in storybook:
   // Transpile TSX to JSX with "preserve"
   // Use babel to transpile JSX to ES5 JS
   config.module.rules.push({
     test: /\.tsx?$/,
-    exclude: [/node_modules/, /test_image/],
+    exclude: [/node_modules/, /test_image/, /packages/],
     include: [/stories/, /components/, /src/],
     loaders: [
       {
-        // JSX -> JS. uses .babelrc
-        loader: 'babel-loader',
-      },
-      {
-        // Loaders run bottom to top. JSX on story
-        loader: require.resolve('@storybook/addon-storysource/loader'),
-        options: {
-          prettierConfig: {
-            parser: 'babylon', //The default prettier parser (we might want 'flow' in future)
-          },
-        },
-      },
-      {
-        loader: 'awesome-typescript-loader',
-        options: {
-          useTranspileModule: true,
-          configFileName: path.resolve(__dirname, 'tsconfig.json'),
-        },
+        loader: 'ts-loader',
+        // options: {},
       },
     ],
-    enforce: 'pre',
   });
 
   config.module.rules.push({
@@ -64,6 +47,27 @@ module.exports = function(config, env) {
         },
       },
     ],
+  });
+
+  config.module.rules.push({
+    exclude: [
+      /\.html$/,
+      /\.(js|jsx|ts|tsx)$/,
+      /\.css$/,
+      /\.scss$/,
+      /\.json$/,
+      // /\.svg$/,
+      /\.hbs$/,
+      /\.ejs$/,
+      // This one is for the google loader specifically
+      /jsapi$/,
+    ],
+    loader: 'file-loader',
+    query: {
+      // limit: 10000,
+      name: 'static/media/[name].[hash:8].[ext]',
+      outputPath: 'dist/',
+    },
   });
 
   config.module.rules.push({
