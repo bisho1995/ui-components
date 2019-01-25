@@ -18,7 +18,6 @@ module.exports = function(config, env, storybookBaseConfig) {
         loader: 'ts-loader',
         options: {
           transpileOnly: true,
-          experimentalWatchApi: true,
         },
       },
     ],
