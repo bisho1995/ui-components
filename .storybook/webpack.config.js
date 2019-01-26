@@ -115,7 +115,7 @@ module.exports = function(config, env, storybookBaseConfig) {
 
   config.plugins.push(
     new ForkTsCheckerWebpackPlugin({
-      workers: 2,
+      workers: ForkTsCheckerWebpackPlugin.TWO_CPUS_FREE,
     })
   );
 
