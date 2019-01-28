@@ -11,6 +11,8 @@ module.exports = function(config, env, storybookBaseConfig) {
   // Use babel to transpile JSX to ES5 JS
   config.output.pathinfo = false;
 
+  // All of this is still a bit too slow for my tastes. The next perf improvement should be
+  // Auto-DLL or hard-source-webpack Webpack 5 will have that functionality by default but there isn't much news about the release
   config.module.rules.push({
     test: /\.tsx?$/,
     exclude: [/node_modules/, /test_image/, /packages/],
@@ -62,20 +64,18 @@ module.exports = function(config, env, storybookBaseConfig) {
       /\.css$/,
       /\.scss$/,
       /\.json$/,
-      // /\.svg$/,
       /\.hbs$/,
+      // EJS needed for storybook ¯\_(ツ)_/¯
       /\.ejs$/,
-      // This one is for the google loader specifically
-      /jsapi$/,
     ],
     loader: 'file-loader',
     query: {
-      // limit: 10000,
       name: 'static/media/[name].[hash:8].[ext]',
       outputPath: 'dist/',
     },
   });
 
+  // Now that we're in Webpack 4 land we should probably use the newer css loader and drop style-loader and extract text
   config.module.rules.push({
     test: /\.module.scss$/,
     use: [
