@@ -21,4 +21,3 @@ const AccordionPanelTitle = (_a) => {
         badgeContent && React.createElement(Badge, { color: badgeColor }, badgeContent)));
 };
 export default AccordionPanelTitle;
-//# sourceMappingURL=accordion-panel-title.js.map

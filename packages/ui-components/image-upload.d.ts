@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { PureComponent } from 'react';
 import { AlertProps } from './alert';
 export interface ImageUploadProps {

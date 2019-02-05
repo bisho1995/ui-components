@@ -68,4 +68,3 @@ export class StatefulTabs extends React.Component {
     }
 }
 export default Tabs;
-//# sourceMappingURL=tabs.js.map

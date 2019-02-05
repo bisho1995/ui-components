@@ -58,4 +58,3 @@ export class SortableTable extends React.Component {
     }
 }
 export default SortableTable;
-//# sourceMappingURL=sortable-table.js.map

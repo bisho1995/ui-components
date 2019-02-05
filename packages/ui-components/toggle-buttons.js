@@ -16,4 +16,3 @@ export const ToggleButtons = (_a) => {
     return (React.createElement(ToggleAnything, { keys: keys, selectedKey: selectedKey, onChange: onChange }, (...args) => (React.createElement("div", Object.assign({ className: cn(className, 'btn-group', Styles['btn-group']), style: style }, attributes), children(...args)))));
 };
 export default ToggleButtons;
-//# sourceMappingURL=toggle-buttons.js.map

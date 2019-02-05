@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { Component } from 'react';
 import { ModalProps } from './utilities/modals';
 import { TooltipLength } from './tooltip';

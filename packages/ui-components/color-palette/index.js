@@ -45,4 +45,3 @@ class ColorPalette extends React.Component {
     }
 }
 export default CustomPicker(ColorPalette);
-//# sourceMappingURL=index.js.map

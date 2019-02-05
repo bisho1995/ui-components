@@ -43,4 +43,3 @@ ConfirmationModal.defaultProps = {
     modalContainer: document.body,
 };
 export default ConfirmationModal;
-//# sourceMappingURL=confirmation-modal.js.map

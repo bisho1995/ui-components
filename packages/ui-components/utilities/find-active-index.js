@@ -7,4 +7,3 @@ const findActiveIndex = (components) => {
     return activeIndex;
 };
 export default findActiveIndex;
-//# sourceMappingURL=find-active-index.js.map

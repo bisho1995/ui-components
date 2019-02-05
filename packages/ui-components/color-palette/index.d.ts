@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from 'react';
 import { ColorResult } from 'react-color';
 import { ColorWrapChangeHandler } from 'react-color/lib/components/common/ColorWrap';

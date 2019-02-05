@@ -55,4 +55,3 @@ export class ImageLibrary extends Component {
     }
 }
 export default ImageLibrary;
-//# sourceMappingURL=image-library.js.map

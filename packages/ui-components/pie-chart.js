@@ -67,4 +67,3 @@ export class PieChart extends React.Component {
     }
 }
 export default PieChart;
-//# sourceMappingURL=pie-chart.js.map

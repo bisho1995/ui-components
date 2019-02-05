@@ -20,4 +20,3 @@ export const Footer = (_a) => {
         children));
 };
 export default Footer;
-//# sourceMappingURL=small-footer.js.map

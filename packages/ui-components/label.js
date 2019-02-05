@@ -7,4 +7,3 @@ Label.defaultProps = {
     type: 'draft',
 };
 export default Label;
-//# sourceMappingURL=label.js.map

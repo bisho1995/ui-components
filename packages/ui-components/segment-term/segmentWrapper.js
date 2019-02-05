@@ -49,4 +49,3 @@ export default class SegmentWrapper extends React.Component {
 SegmentWrapper.defaultProps = {
     editing: false,
 };
-//# sourceMappingURL=segmentWrapper.js.map

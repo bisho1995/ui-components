@@ -1,9 +1,8 @@
-/// <reference types="react" />
 import React from 'react';
 import { IconType } from './types/icons';
 export declare enum EditorType {
     Code = "code",
-    Design = "design",
+    Design = "design"
 }
 export declare const EditorBadge: React.SFC<{
     type: EditorType;

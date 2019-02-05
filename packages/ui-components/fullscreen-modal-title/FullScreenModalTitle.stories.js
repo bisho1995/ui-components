@@ -27,4 +27,3 @@ class ExampleModalContainer extends Component {
 stories.add('With data and descriptors', () => (React.createElement(FullscreenModalTitle, { title: "check out this cool title", titleDescriptor: "It has a date", date: "Dec. 20th, 2018, 4:45 PM MST", dateDescriptor: "The date is" })));
 stories.add('inside of fullscreen modal', () => (React.createElement(ExampleModalContainer, { render: ({ isOpen, onClose }) => (React.createElement(FullscreenModal, { isOpen: isOpen, title: "Fullscreen Modal", onClose: onClose },
         React.createElement(FullscreenModalTitle, { title: "check out this cool title", titleDescriptor: "It has a date", date: "Dec. 20th, 2018, 4:45 PM MST", dateDescriptor: "The date is" }))) })));
-//# sourceMappingURL=FullScreenModalTitle.stories.js.map

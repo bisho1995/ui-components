@@ -29,4 +29,3 @@ export const Meter = (_a) => {
                 }), style: { width: `${value}%` } }))));
 };
 export default Meter;
-//# sourceMappingURL=meter.js.map

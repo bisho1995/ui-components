@@ -75,4 +75,3 @@ Button.defaultProps = {
     type: 'primary',
 };
 export default withNativeProps(Button);
-//# sourceMappingURL=button.js.map

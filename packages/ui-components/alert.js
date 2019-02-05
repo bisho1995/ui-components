@@ -34,4 +34,3 @@ Alert.defaultProps = {
     inline: false,
 };
 export default Alert;
-//# sourceMappingURL=alert.js.map

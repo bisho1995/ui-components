@@ -85,4 +85,3 @@ export class DropdownButton extends React.Component {
 }
 DropdownButton.defaultProps = Button.defaultProps;
 export default DropdownButton;
-//# sourceMappingURL=dropdown-button.js.map

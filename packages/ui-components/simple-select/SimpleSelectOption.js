@@ -18,4 +18,3 @@ export default class SimpleSelectOption extends Component {
             }), onMouseDown: this.handleClick, style: style }, label));
     }
 }
-//# sourceMappingURL=SimpleSelectOption.js.map

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { Component } from 'react';
 import { TooltipLength } from './tooltip';
 import { IconType } from './types/icons';

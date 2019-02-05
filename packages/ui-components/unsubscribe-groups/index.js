@@ -36,4 +36,3 @@ export const UnsubscribeGroupCard = (_a) => {
 export { UnsubscribeGroupAddEdit } from './add-edit';
 export { CreateNewGroupCard } from './create-new-group-card';
 export default UnsubscribeGroupCard;
-//# sourceMappingURL=index.js.map

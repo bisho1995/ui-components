@@ -44,4 +44,3 @@ Loader.defaultProps = {
     small: false,
 };
 export default Loader;
-//# sourceMappingURL=loader.js.map

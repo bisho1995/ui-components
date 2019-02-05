@@ -6,4 +6,3 @@ const withNativeProps = (WrappedCmp) => {
     };
 };
 export default withNativeProps;
-//# sourceMappingURL=withNativeProps.js.map

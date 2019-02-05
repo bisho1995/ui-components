@@ -88,4 +88,3 @@ EmailCard.defaultProps = {
     renderAlert: false,
 };
 export default EmailCard;
-//# sourceMappingURL=email-card.js.map

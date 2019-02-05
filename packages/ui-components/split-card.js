@@ -21,4 +21,3 @@ export const SplitCard = (_a) => {
         React.createElement("div", { className: cn('split-content', Styles['split-content']) }, children)));
 };
 export default SplitCard;
-//# sourceMappingURL=split-card.js.map

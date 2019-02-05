@@ -53,4 +53,3 @@ class ColorStorage extends Component {
     }
 }
 export default ColorStorage;
-//# sourceMappingURL=colorStorage.js.map

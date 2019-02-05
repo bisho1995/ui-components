@@ -20,4 +20,3 @@ export const NumberedSteps = (_a) => {
     var { children, className } = _a, attributes = __rest(_a, ["children", "className"]);
     return (React.createElement("ol", { className: cn('numbered-steps', Styles['numbered-steps'], className) }, children));
 };
-//# sourceMappingURL=numbered-steps.js.map

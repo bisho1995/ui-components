@@ -10,4 +10,3 @@ export const Table = ({ children, className, }) => {
     return (React.createElement("table", { className: cn('table-wrap', className) }, children));
 };
 export default Table;
-//# sourceMappingURL=table.js.map

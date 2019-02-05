@@ -152,4 +152,3 @@ FileUpload.defaultProps = {
     supportedExtensions: [],
 };
 export default FileUpload;
-//# sourceMappingURL=file-upload.js.map

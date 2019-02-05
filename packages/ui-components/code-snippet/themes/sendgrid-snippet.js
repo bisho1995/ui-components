@@ -176,4 +176,3 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgb
     const dom = require('../lib/dom');
     dom.importCssString(exports.cssText, exports.cssClass);
 });
-//# sourceMappingURL=sendgrid-snippet.js.map

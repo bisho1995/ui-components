@@ -26,4 +26,3 @@ export class SaveButton extends React.Component {
     }
 }
 export default SaveButton;
-//# sourceMappingURL=save-button.js.map

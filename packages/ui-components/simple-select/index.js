@@ -35,4 +35,3 @@ SimpleSelect.defaultProps = {
 };
 export default SimpleSelect;
 export { SimpleSelect };
-//# sourceMappingURL=index.js.map

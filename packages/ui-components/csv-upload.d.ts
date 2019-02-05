@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { PureComponent } from 'react';
 export interface CSVUploadProps {
     onChange: (event: any) => void;

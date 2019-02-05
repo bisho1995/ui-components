@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Component } from 'react';
 import { SGLibraryImage } from './image-library';
 export interface ImageLibraryThumbnailListProps {

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from 'react';
 import { ActionsProps } from './actions';
 import { StatisticType } from './statistics';

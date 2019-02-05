@@ -32,4 +32,3 @@ export default function classNames(...args) {
         .join(' ')
         .trim();
 }
-//# sourceMappingURL=classnames.js.map

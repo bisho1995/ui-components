@@ -12,4 +12,3 @@ export const Column = ({ children, width, offset }) => {
         }) }, children));
 };
 export default Column;
-//# sourceMappingURL=column.js.map

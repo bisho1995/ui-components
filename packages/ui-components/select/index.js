@@ -208,4 +208,3 @@ const Createable = props => {
 };
 export default Select;
 export { Select, Createable };
-//# sourceMappingURL=index.js.map

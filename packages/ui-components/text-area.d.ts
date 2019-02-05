@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { Component } from 'react';
 import { TooltipDirection } from './tooltip';
 export interface TextAreaProps {
@@ -28,7 +27,7 @@ export declare class TextArea extends Component<TextAreaProps & React.InputHTMLA
     };
     textareaMeasurer: HTMLTextAreaElement;
     componentDidMount(): void;
-    componentDidUpdate({value: previousValue}: TextAreaProps): void;
+    componentDidUpdate({ value: previousValue }: TextAreaProps): void;
     calculateHeight: () => string;
     setFocused: () => void;
     setBlurred: () => void;

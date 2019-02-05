@@ -18,4 +18,3 @@ class SwitchContainer extends Component {
 stories.add('Switch - On', () => React.createElement(SwitchContainer, { id: "switch-example-on", on: true }));
 stories.add('Switch - Off', () => React.createElement(SwitchContainer, { id: "switch-example-off" }));
 stories.add('Switch - Disabled', () => (React.createElement(SwitchContainer, { id: "switch-example-disabled", disabled: true, on: true })));
-//# sourceMappingURL=Switch.stories.js.map

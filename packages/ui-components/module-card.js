@@ -44,4 +44,3 @@ export const ModuleCard = (_a) => {
             titles[type])));
 };
 export default ModuleCard;
-//# sourceMappingURL=module-card.js.map

@@ -79,4 +79,3 @@ TextArea.defaultProps = {
     scrollable: false,
 };
 export default TextArea;
-//# sourceMappingURL=text-area.js.map

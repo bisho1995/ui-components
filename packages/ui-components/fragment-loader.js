@@ -18,4 +18,3 @@ export const FragmentLoader = (_a) => {
         React.createElement("rect", { className: cn('fragment-square', Styles['fragment-square'], 'right', Styles.right), width: "10", height: "10" })));
 };
 export default FragmentLoader;
-//# sourceMappingURL=fragment-loader.js.map

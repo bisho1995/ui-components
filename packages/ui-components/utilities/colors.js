@@ -21,4 +21,3 @@ const colors = [
     'steel',
 ];
 export default colors;
-//# sourceMappingURL=colors.js.map

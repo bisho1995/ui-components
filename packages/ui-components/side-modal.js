@@ -34,4 +34,3 @@ SideModal.defaultProps = {
     modalContainer: document.body,
 };
 export default SideModal;
-//# sourceMappingURL=side-modal.js.map

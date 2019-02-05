@@ -20,4 +20,3 @@ Badge.defaultProps = {
     color: '',
 };
 export default Badge;
-//# sourceMappingURL=badge.js.map

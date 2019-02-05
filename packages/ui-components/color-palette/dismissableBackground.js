@@ -12,4 +12,3 @@ const DismissableBackground = ({ children, onClick }) => {
         }, className: Styles['dismissable-background'], onClick: handleClick }, children));
 };
 export default DismissableBackground;
-//# sourceMappingURL=dismissableBackground.js.map

@@ -99,4 +99,3 @@ labelStories.add('label', () => (React.createElement(React.Fragment, null,
 labelStories.add('label - required', () => (React.createElement(React.Fragment, null,
     React.createElement(Select, { label: 'Powerups', options: powerups, required: true, info: `it's a trap` }))));
 labelStories.add('info', () => (React.createElement(Select, { options: powerups, info: 'Read this to better understand the dropdown.' })));
-//# sourceMappingURL=Select.stories.js.map

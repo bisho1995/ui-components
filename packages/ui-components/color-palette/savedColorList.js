@@ -10,4 +10,3 @@ const SavedColorList = ({ colors = [], addColor, removeColor, onChange, }) => {
         React.createElement(AddSavedColorButton, { onClick: addColor })));
 };
 export default SavedColorList;
-//# sourceMappingURL=savedColorList.js.map

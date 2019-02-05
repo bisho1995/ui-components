@@ -32,4 +32,3 @@ class ImageUpload extends PureComponent {
     }
 }
 export default ImageUpload;
-//# sourceMappingURL=image-upload.js.map

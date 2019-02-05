@@ -13,4 +13,3 @@ const AccordionPanelDescription = (_a) => {
     return (React.createElement("p", Object.assign({ style: style, className: className }, attributes), text));
 };
 export default AccordionPanelDescription;
-//# sourceMappingURL=accordion-panel-description.js.map

@@ -51,4 +51,3 @@ export const UnsubscribeGroupAddEdit = (_a) => {
                 React.createElement(Button, { small: true, type: "danger", onClick: onDeleteUnsubscribeGroup }, "Delete"))), renderBody: () => (React.createElement("p", { className: "small" }, "Warning: After deleting this group, recipients that unsubscribe from emails previously associated with this group will be globally unsubscribed because the group no longer exists.")), renderHeader: 'Are you sure you want to delete this unsubscribe group?' })));
 };
 export default UnsubscribeGroupAddEdit;
-//# sourceMappingURL=add-edit.js.map

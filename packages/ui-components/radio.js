@@ -42,4 +42,3 @@ export class StatefulRadio extends React.Component {
     }
 }
 export default Radio;
-//# sourceMappingURL=radio.js.map

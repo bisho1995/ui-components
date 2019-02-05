@@ -27,4 +27,3 @@ export class PercentInput extends React.Component {
     }
 }
 export default PercentInput;
-//# sourceMappingURL=percent-input.js.map

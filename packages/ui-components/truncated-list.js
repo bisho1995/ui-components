@@ -35,4 +35,3 @@ export const TruncatedList = (_a) => {
         !renderMore && hasAdditionalItems && additionalItemText));
 };
 export default TruncatedList;
-//# sourceMappingURL=truncated-list.js.map

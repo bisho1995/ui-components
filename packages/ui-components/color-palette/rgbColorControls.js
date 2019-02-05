@@ -24,4 +24,3 @@ class RGBColorControls extends Component {
     }
 }
 export default RGBColorControls;
-//# sourceMappingURL=rgbColorControls.js.map

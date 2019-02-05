@@ -32,4 +32,3 @@ export class QuadInput extends PureComponent {
     }
 }
 export default QuadInput;
-//# sourceMappingURL=quad-input.js.map

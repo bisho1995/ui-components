@@ -22,4 +22,3 @@ export default class ToggleAnything extends React.Component {
 ToggleAnything.defaultProps = {
     selectedKey: null,
 };
-//# sourceMappingURL=toggle-anything.js.map

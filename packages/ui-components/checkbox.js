@@ -19,4 +19,3 @@ export const Checkbox = (_a) => {
             info ? (React.createElement("span", { className: cn('input-checkbox-info', Styles['input-checkbox-info']) }, info)) : null)));
 };
 export default Checkbox;
-//# sourceMappingURL=checkbox.js.map

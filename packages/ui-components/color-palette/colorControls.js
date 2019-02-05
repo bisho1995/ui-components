@@ -23,4 +23,3 @@ const ColorControls = ({ colorProps, }) => {
         React.createElement(RGBColorControls, { rgb: colorProps.rgb, onChange: handleChange })));
 };
 export default ColorControls;
-//# sourceMappingURL=colorControls.js.map

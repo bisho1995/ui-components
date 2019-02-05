@@ -49,4 +49,3 @@ export class AccordionPanel extends React.Component {
 }
 export default AccordionPanel;
 export { AccordionPanelDescription, AccordionPanelTitle, AccordionPanelIcon, AccordionPanelSFC, };
-//# sourceMappingURL=accordion-panel.js.map

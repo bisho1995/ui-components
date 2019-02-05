@@ -62,4 +62,3 @@ SegmentTerm.defaultProps = {
     radios: false,
 };
 export { SegmentWrapper };
-//# sourceMappingURL=index.js.map

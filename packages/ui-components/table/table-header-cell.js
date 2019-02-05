@@ -19,4 +19,3 @@ export class HeaderCell extends React.Component {
     }
 }
 export default HeaderCell;
-//# sourceMappingURL=table-header-cell.js.map

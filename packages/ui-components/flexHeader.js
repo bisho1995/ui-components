@@ -41,4 +41,3 @@ export const FlexHeaderTab = props => {
         props.iconType && React.createElement(Icon, { type: props.iconType }),
         props.text));
 };
-//# sourceMappingURL=flexHeader.js.map

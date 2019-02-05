@@ -23,4 +23,3 @@ Breadcrumb.defaultProps = {
     withoutTrailingSlash: false,
 };
 export default Breadcrumb;
-//# sourceMappingURL=breadcrumb.js.map

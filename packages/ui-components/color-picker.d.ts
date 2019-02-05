@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from 'react';
 import { ColorResult, HSLColor, RGBColor } from 'react-color';
 import { HTMLInputElementProps } from './text-input';
@@ -41,6 +40,6 @@ export declare class ColorPicker extends React.Component<ColorPickerPropsTypes &
     private handleChangeFromColorPalette;
     private toggleColorPalette;
     private handleColorPaletteMount;
-    private colorResultFrom(colorStr);
+    private colorResultFrom;
 }
 export default ColorPicker;

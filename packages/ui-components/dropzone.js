@@ -49,4 +49,3 @@ Dropzone.defaultProps = {
     large: false,
 };
 export default Dropzone;
-//# sourceMappingURL=dropzone.js.map

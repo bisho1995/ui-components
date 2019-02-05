@@ -21,4 +21,3 @@ ButtonList.defaultProps = {
     onDark: false,
 };
 export default ButtonList;
-//# sourceMappingURL=button-list.js.map

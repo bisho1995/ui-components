@@ -94,4 +94,3 @@ stories.add('Accordion - Editor', () => (React.createElement(Accordion, { editor
                 React.createElement(CardContent, { title: "Spacer", iconType: "spacer" })),
             React.createElement(Card, { module: true, centered: true },
                 React.createElement(CardContent, { title: "Social", iconType: "social" })))))));
-//# sourceMappingURL=Accordion.stories.js.map

@@ -26,4 +26,3 @@ export const EmptyState = (_a) => {
         children));
 };
 export default EmptyState;
-//# sourceMappingURL=empty-state.js.map

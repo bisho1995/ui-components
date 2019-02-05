@@ -35,4 +35,3 @@ export const UploadProgress = (_a) => {
 };
 UploadProgress.defaultProps = {};
 export default UploadProgress;
-//# sourceMappingURL=upload-progress.js.map

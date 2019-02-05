@@ -18,4 +18,3 @@ const copyToClipboardFallback = (value, onCopyImageUrlSuccess, onCopyImageUrlFai
     }
 };
 export default { copyToClipboardFallback };
-//# sourceMappingURL=copy-to-clipboard.js.map

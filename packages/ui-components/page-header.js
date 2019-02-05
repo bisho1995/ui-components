@@ -27,4 +27,3 @@ PageHeading.defaultProps = {
     title: '',
 };
 export default PageHeader;
-//# sourceMappingURL=page-header.js.map

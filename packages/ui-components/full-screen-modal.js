@@ -32,4 +32,3 @@ FullscreenModal.defaultProps = {
     onClose: () => { },
 };
 export default FullscreenModal;
-//# sourceMappingURL=full-screen-modal.js.map

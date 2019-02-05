@@ -34,4 +34,3 @@ class CodeSnippet extends Component {
 }
 export default CodeSnippet;
 export { CodeSnippet };
-//# sourceMappingURL=index.js.map

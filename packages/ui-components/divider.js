@@ -21,4 +21,3 @@ Divider.defaultProps = {
     thin: false,
 };
 export default Divider;
-//# sourceMappingURL=divider.js.map

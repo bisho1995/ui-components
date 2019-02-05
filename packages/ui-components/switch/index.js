@@ -18,4 +18,3 @@ Switch.defaultProps = {
     value: '',
 };
 export default Switch;
-//# sourceMappingURL=index.js.map

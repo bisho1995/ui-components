@@ -29,4 +29,3 @@ class ImageLibraryThumbnail extends Component {
     }
 }
 export default ImageLibraryThumbnailList;
-//# sourceMappingURL=image-library-thumbnail-list.js.map

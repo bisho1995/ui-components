@@ -74,4 +74,3 @@ HTMLTooltip.defaultProps = {
     direction: 'right',
 };
 export default Tooltip;
-//# sourceMappingURL=tooltip.js.map

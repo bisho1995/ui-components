@@ -9,4 +9,3 @@ stories.add('Banner Messages', () => (React.createElement(Fragment, null,
     React.createElement(BannerMessage, { type: "beta" },
         "Beta banner with ",
         React.createElement("strong", null, "some jsx")))));
-//# sourceMappingURL=BannerMessage.stories.js.map

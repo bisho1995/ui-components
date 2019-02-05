@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { Component } from 'react';
 import { ColorChangeHandler, RGBColor } from 'react-color';
 export interface RGBColorControlsProp {

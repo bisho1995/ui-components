@@ -9,4 +9,3 @@ export const Primitive = props => {
     });
     return React.createElement(Fragment, null, newChildren);
 };
-//# sourceMappingURL=primitive.js.map

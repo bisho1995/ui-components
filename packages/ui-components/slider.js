@@ -42,4 +42,3 @@ Slider.defaultProps = {
     value: 0,
 };
 export default Slider;
-//# sourceMappingURL=slider.js.map

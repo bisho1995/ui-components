@@ -101,4 +101,3 @@ export class ColorPicker extends React.Component {
     }
 }
 export default ColorPicker;
-//# sourceMappingURL=color-picker.js.map

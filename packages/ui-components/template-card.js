@@ -49,4 +49,3 @@ export const TemplateCard = (_a) => {
         typeof editorInfo === 'string' ? (React.createElement(EditorBadge, { type: editorInfo })) : (React.createElement("div", { className: cn('editor-type', Styles['editor-type']) }, editorInfo))));
 };
 export default TemplateCard;
-//# sourceMappingURL=template-card.js.map

@@ -11,4 +11,3 @@ export const modalWillReceiveProps = (nextProps, currentProps) => {
         bodyNode.classList.remove(modalOpenClass);
     }
 };
-//# sourceMappingURL=modals.js.map

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { SFC } from 'react';
 import { ColorChangeHandler, InjectedColorProps } from 'react-color';
 export declare type ChangeHandlerType = (onChange: (...args: Array<any>) => void) => ColorChangeHandler;

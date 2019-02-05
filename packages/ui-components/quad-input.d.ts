@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { PureComponent } from 'react';
 import { Units } from './types/units';
 export declare type QuadInputs = 'top' | 'right' | 'bottom' | 'left';
@@ -15,7 +14,7 @@ export interface QuadInputProps {
 export declare class QuadInput extends PureComponent<QuadInputProps> {
     constructor(props: QuadInputProps);
     render(): JSX.Element;
-    private getPlaceholder(inputName);
+    private getPlaceholder;
     private handleChange;
 }
 export default QuadInput;

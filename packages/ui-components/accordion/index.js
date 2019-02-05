@@ -16,4 +16,3 @@ export const Accordion = ({ caretLeft, children, className, editor, large, list,
 };
 export default Accordion;
 export { AccordionPanel, AccordionPanelSFC, AccordionPanelDescription, AccordionPanelIcon, AccordionPanelTitle, };
-//# sourceMappingURL=index.js.map

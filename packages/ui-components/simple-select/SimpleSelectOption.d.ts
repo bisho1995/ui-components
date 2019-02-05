@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Component } from 'react';
 import { SimpleSelectOptionData, SimpleSelectProps } from './';
 export declare type SimpleSelectOptionProps = Pick<SimpleSelectProps, 'onOptionSelect'> & {

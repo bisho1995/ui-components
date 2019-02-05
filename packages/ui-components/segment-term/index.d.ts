@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { PureComponent } from 'react';
 import SegmentWrapper from './segmentWrapper';
 export interface SegmentTermProps {

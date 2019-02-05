@@ -16,4 +16,3 @@ export const CreateNewGroupCard = (_a) => {
         React.createElement(Button, { type: "primary", onClick: handleCreate, disabled: disabled }, "Create New Group")));
 };
 export default CreateNewGroupCard;
-//# sourceMappingURL=create-new-group-card.js.map

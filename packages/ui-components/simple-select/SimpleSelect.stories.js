@@ -97,4 +97,3 @@ stories.add('Required, label', () => (React.createElement(DemoSelect, { required
 stories.add('Required, label, info', () => (React.createElement(DemoSelect, { required: true, placeholder: "Choose a thing", label: "This is required", info: "For your information, this is required", options: feels })));
 stories.add('Default Value, label, info', () => (React.createElement(DemoSelect, { required: true, defaultValue: feels[3], label: "Check out this default", info: "For your information, this is required", options: feels })));
 stories.add('Wacky custom option styling', () => (React.createElement(DemoSelect, { required: true, label: "This is required", info: "For your information, this is required", options: powerups })));
-//# sourceMappingURL=SimpleSelect.stories.js.map

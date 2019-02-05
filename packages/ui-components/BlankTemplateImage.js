@@ -15,4 +15,3 @@ const BlankTemplateImage = (React.createElement("svg", { className: "blank-templ
                 React.createElement("circle", { cx: "7", cy: "3", r: "3" }))),
         React.createElement("rect", { width: "132", height: "5", x: "14", y: "14", fill: "#F4F6F7" }))));
 export default BlankTemplateImage;
-//# sourceMappingURL=BlankTemplateImage.js.map

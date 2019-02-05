@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { Component, MouseEvent } from 'react';
 export interface SimpleSelectOptionData {
     label: string;

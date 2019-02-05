@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { Component } from 'react';
 import { SGLibraryImage } from './image-library';
 export interface ImageLibraryDetailsPaneProps {

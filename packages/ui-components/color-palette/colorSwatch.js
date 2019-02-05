@@ -20,4 +20,3 @@ const ColorSwatch = ({ color, current = false, onClick, removeColor, }) => {
         React.createElement(Icon, { type: "x" })))));
 };
 export default ColorSwatch;
-//# sourceMappingURL=colorSwatch.js.map

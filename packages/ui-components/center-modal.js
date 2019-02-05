@@ -50,4 +50,3 @@ CenterModal.defaultProps = {
     padding: true,
 };
 export default CenterModal;
-//# sourceMappingURL=center-modal.js.map

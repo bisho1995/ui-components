@@ -30,4 +30,3 @@ Icon.defaultProps = {
     style: {},
 };
 export default Icon;
-//# sourceMappingURL=icon.js.map

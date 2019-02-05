@@ -1,4 +1,4 @@
-export { Accordion, AccordionPanel, AccordionPanelSFC, AccordionPanelTitle, AccordionPanelDescription, AccordionPanelIcon } from './accordion';
+export { Accordion, AccordionPanel, AccordionPanelSFC, AccordionPanelTitle, AccordionPanelDescription, AccordionPanelIcon, } from './accordion';
 export { Action, Actions, ActionsCell } from './actions';
 export { Alert } from './alert';
 export { Badge } from './badge';
@@ -42,7 +42,7 @@ export { SimpleSelect } from './simple-select';
 export { SortableTable } from './table/sortable-table';
 export { Switch } from './switch';
 export { Tab, Tabs } from './tabs';
-export { Table, TableRow, HeaderCell, TableCell, TableHeader, TableBody } from './table/table';
+export { Table, TableRow, HeaderCell, TableCell, TableHeader, TableBody, } from './table/table';
 export { TextInput } from './text-input';
 export { ToggleButtons } from './toggle-buttons';
 export { Tooltip, HTMLTooltip } from './tooltip';

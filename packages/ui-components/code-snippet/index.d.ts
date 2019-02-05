@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Component } from 'react';
 import './themes/sendgrid-snippet';
 export interface CodeSnippetProps {

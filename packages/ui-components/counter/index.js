@@ -22,4 +22,3 @@ Counter.defaultProps = {
     text: '',
 };
 export default Counter;
-//# sourceMappingURL=index.js.map

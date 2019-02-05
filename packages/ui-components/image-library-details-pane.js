@@ -37,4 +37,3 @@ export class ImageLibraryDetailsPane extends Component {
     }
 }
 export default ImageLibraryDetailsPane;
-//# sourceMappingURL=image-library-details-pane.js.map

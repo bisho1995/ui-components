@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React, { CSSProperties } from 'react';
 import { InputIcons } from './types/input-icons';
 import { InputType } from './types/inputs';

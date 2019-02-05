@@ -34,4 +34,3 @@ ProgressStage.defaultProps = {
     done: false,
     selected: false,
 };
-//# sourceMappingURL=progress.js.map

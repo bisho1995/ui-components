@@ -13,4 +13,3 @@ export const TableRow = (_a) => {
     return (React.createElement("tr", Object.assign({ className: className }, attributes), children));
 };
 export default TableRow;
-//# sourceMappingURL=table-row.js.map

@@ -25,4 +25,3 @@ class CSVUpload extends PureComponent {
     }
 }
 export default CSVUpload;
-//# sourceMappingURL=csv-upload.js.map

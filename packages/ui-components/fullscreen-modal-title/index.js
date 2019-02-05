@@ -16,4 +16,3 @@ class FullscreenModalTitle extends Component {
 }
 export default FullscreenModalTitle;
 export { FullscreenModalTitle };
-//# sourceMappingURL=index.js.map

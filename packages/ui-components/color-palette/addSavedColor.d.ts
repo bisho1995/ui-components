@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from 'react';
 export interface AddSavedColorButtonProps {
     onClick: (event: React.MouseEvent<HTMLElement>) => void;
