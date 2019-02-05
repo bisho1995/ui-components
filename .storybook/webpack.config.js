@@ -1,40 +1,31 @@
 const path = require('path');
-const storybookBaseConfig = require('@storybook/react/dist/server/config/defaults/webpack.config.js');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
-module.exports = function(config, env) {
-  config = storybookBaseConfig(config, env);
+module.exports = function(config, env, storybookBaseConfig) {
+  // console.log(storybookBaseConfig);
+  // config = storybookBaseConfig(config, env);
 
   // To show JSX in storybook:
   // Transpile TSX to JSX with "preserve"
   // Use babel to transpile JSX to ES5 JS
+  config.output.pathinfo = false;
+
+  // All of this is still a bit too slow for my tastes. The next perf improvement should be
+  // Auto-DLL or hard-source-webpack Webpack 5 will have that functionality by default but there isn't much news about the release
   config.module.rules.push({
     test: /\.tsx?$/,
-    exclude: [/node_modules/, /test_image/],
+    exclude: [/node_modules/, /test_image/, /packages/],
     include: [/stories/, /components/, /src/],
     loaders: [
       {
-        // JSX -> JS. uses .babelrc
-        loader: 'babel-loader',
-      },
-      {
-        // Loaders run bottom to top. JSX on story
-        loader: require.resolve('@storybook/addon-storysource/loader'),
+        loader: 'ts-loader',
         options: {
-          prettierConfig: {
-            parser: 'babylon', //The default prettier parser (we might want 'flow' in future)
-          },
-        },
-      },
-      {
-        loader: 'awesome-typescript-loader',
-        options: {
-          useTranspileModule: true,
-          configFileName: path.resolve(__dirname, 'tsconfig.json'),
+          transpileOnly: true,
+          experimentalWatchApi: true,
         },
       },
     ],
-    enforce: 'pre',
   });
 
   config.module.rules.push({
@@ -66,6 +57,25 @@ module.exports = function(config, env) {
     ],
   });
 
+  config.module.rules.push({
+    exclude: [
+      /\.html$/,
+      /\.(js|jsx|ts|tsx)$/,
+      /\.css$/,
+      /\.scss$/,
+      /\.json$/,
+      /\.hbs$/,
+      // EJS needed for storybook ¯\_(ツ)_/¯
+      /\.ejs$/,
+    ],
+    loader: 'file-loader',
+    query: {
+      name: 'static/media/[name].[hash:8].[ext]',
+      outputPath: 'dist/',
+    },
+  });
+
+  // Now that we're in Webpack 4 land we should probably use the newer css loader and drop style-loader and extract text
   config.module.rules.push({
     test: /\.module.scss$/,
     use: [
@@ -101,6 +111,12 @@ module.exports = function(config, env) {
 
   config.plugins = config.plugins.filter(
     plugin => plugin.constructor.name !== 'UglifyJsPlugin'
+  );
+
+  config.plugins.push(
+    new ForkTsCheckerWebpackPlugin({
+      workers: ForkTsCheckerWebpackPlugin.TWO_CPUS_FREE,
+    })
   );
 
   return config;

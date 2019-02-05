@@ -5,7 +5,14 @@ module.exports = {
     '^.+\\.(css|less|scss)$': 'identity-obj-proxy',
   },
   transform: {
-    '\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest/preprocessor.js',
+    '\\.(js|jsx)$': 'babel-jest',
+    '\\.(ts|tsx)$': 'ts-jest',
   },
   testMatch: ['**/*.test.(ts|tsx|js)'],
+  globals: {
+    'ts-jest': {
+      babelConfig: true,
+      tsConfig: './jest.tsconfig.json',
+    },
+  },
 };

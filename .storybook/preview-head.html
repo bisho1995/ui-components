@@ -1,30 +1,40 @@
-
 <style>
   body {
     padding: 4em !important;
-    margin:0px;
+    margin: 0;
   }
 </style>
 <script>
-if(window.location.origin === "file://"){
-
-  var css = `*, *::before, *::after {
+  if (window.location.origin === 'file://') {
+    var css = `*, *::before, *::after {
       -moz-transition: none !important;
       transition: none !important;
       -moz-animation: none !important;
       animation: none !important;
-    }`,
-    head = document.head || document.getElementsByTagName('head')[0],
-    style = document.createElement('style');
+    }
+    .meter-title.has-underline {
+      border-bottom: none;
+    }
 
-  style.type = 'text/css';
-  if (style.styleSheet){
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
+    [data-tooltip].has-underline {
+      background: none !important;
+      border-bottom: none !important;
+    }
+
+    abbr {
+      background: none !important;
+    }
+    `,
+      head = document.head || document.getElementsByTagName('head')[0],
+      style = document.createElement('style');
+
+    style.type = 'text/css';
+    if (style.styleSheet) {
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }
+
+    head.appendChild(style);
   }
-
-  head.appendChild(style);
-}
-
 </script>

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "newLine": "lf",
+    "module": "CommonJS",
+    "allowJs": false
+  }
+}
