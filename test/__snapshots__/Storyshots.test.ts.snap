@@ -3669,6 +3669,52 @@ exports[`Storyshots ConfirmationModal ConfirmationModal with plain contents 1`] 
 </div>
 `;
 
+exports[`Storyshots ContactCount ContactCount (with count) 1`] = `
+<div
+  className="contact-count"
+>
+  <span
+    className={undefined}
+    data-tooltip="Contact Count"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <abbr>
+      5,432
+    </abbr>
+  </span>
+   
+  <i
+    className="sg-icon sg-icon-people is-size-20"
+    onClick={undefined}
+    style={null}
+  />
+</div>
+`;
+
+exports[`Storyshots ContactCount ContactCount 1`] = `
+<div
+  className="contact-count"
+>
+  <span
+    className={undefined}
+    data-tooltip="Contact Count"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <abbr>
+      0
+    </abbr>
+  </span>
+   
+  <i
+    className="sg-icon sg-icon-people is-size-20"
+    onClick={undefined}
+    style={null}
+  />
+</div>
+`;
+
 exports[`Storyshots Counter Counter 1`] = `
 <div
   className="counter"
@@ -9633,7 +9679,7 @@ exports[`Storyshots Grid Offset 5 1`] = `
   className="row"
 >
   <div
-    className="col-offset-5"
+    className="col-start-5"
   >
     <div
       className="card"
@@ -9656,7 +9702,7 @@ exports[`Storyshots Grid Using Width & Offset 1`] = `
   className="row"
 >
   <div
-    className="col-6 col-offset-3"
+    className="col-6 col-start-3"
   >
     <div
       className="card"
