@@ -3669,9 +3669,9 @@ exports[`Storyshots ConfirmationModal ConfirmationModal with plain contents 1`] 
 </div>
 `;
 
-exports[`Storyshots ContactCount ContactCount (with count) 1`] = `
+exports[`Storyshots Contact Count Contact Count (with count) 1`] = `
 <div
-  className="contact-count"
+  className="contact-count contact-count"
 >
   <span
     className={undefined}
@@ -3692,9 +3692,55 @@ exports[`Storyshots ContactCount ContactCount (with count) 1`] = `
 </div>
 `;
 
-exports[`Storyshots ContactCount ContactCount 1`] = `
+exports[`Storyshots Contact Count Contact Count (with string count) 1`] = `
 <div
-  className="contact-count"
+  className="contact-count contact-count"
+>
+  <span
+    className={undefined}
+    data-tooltip="Contact Count"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <abbr>
+      5,432
+    </abbr>
+  </span>
+   
+  <i
+    className="sg-icon sg-icon-people is-size-20"
+    onClick={undefined}
+    style={null}
+  />
+</div>
+`;
+
+exports[`Storyshots Contact Count Contact Count 1`] = `
+<div
+  className="contact-count contact-count"
+>
+  <span
+    className={undefined}
+    data-tooltip="Contact Count"
+    data-tooltip-length={undefined}
+    data-tooltip-pos="up"
+  >
+    <abbr>
+      0
+    </abbr>
+  </span>
+   
+  <i
+    className="sg-icon sg-icon-people is-size-20"
+    onClick={undefined}
+    style={null}
+  />
+</div>
+`;
+
+exports[`Storyshots Contact Count Contact Count Right Aligned 1`] = `
+<div
+  className="contact-count contact-count is-right"
 >
   <span
     className={undefined}

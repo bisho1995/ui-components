@@ -19,7 +19,7 @@ export { CodeSnippet } from './code-snippet';
 export { Column } from './grid/column';
 export { Checkbox } from './checkbox';
 export { ConfirmationModal } from './confirmation-modal';
-export { ContactCount } from './contactCount';
+export { ContactCount } from './contact-count';
 export { Divider } from './divider';
 export { DropdownButton } from './dropdown-button';
 export { Dropzone } from './dropzone';

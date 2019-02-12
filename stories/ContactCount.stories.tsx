@@ -1,10 +1,14 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 
-import ContactCount from '../src/contactCount';
+import ContactCount from '../src/contact-count';
 
-const stories = storiesOf('ContactCount', module);
+const stories = storiesOf('Contact Count', module);
 
-stories.add('ContactCount', () => <ContactCount />);
+stories.add('Contact Count', () => <ContactCount />);
 
-stories.add('ContactCount (with count)', () => <ContactCount count="5432"/>);
+stories.add('Contact Count Right Aligned', () => <ContactCount isRight/>);
+
+stories.add('Contact Count (with count)', () => <ContactCount count={5432}/>);
+
+stories.add('Contact Count (with string count)', () => <ContactCount count="5432"/>);
