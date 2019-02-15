@@ -59,7 +59,13 @@ export class TextArea extends Component<
       return '25px';
     }
 
-    return `${Math.min(this.textareaMeasurer.scrollHeight, maxHeight)}px`;
+    // It is possible for the measurer to be defined but with a height of zero if the textarea is
+    // not visible, e.g. inside a collapsed accordion.  Then when the accordion is opened, the height will
+    // remain zero without the Math.max part of this calculation.
+    return `${Math.min(
+      Math.max(25, this.textareaMeasurer.scrollHeight),
+      maxHeight
+    )}px`;
   };
 
   public setFocused = () => this.setState({ focused: true });
